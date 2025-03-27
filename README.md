@@ -1,7 +1,7 @@
 # Stacks
 - React
 - Next.js
-- Tailwind CSS
+- Tailwind CSS -> shadcn
 - Typescript
 
 # Preview

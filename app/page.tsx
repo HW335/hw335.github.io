@@ -7,8 +7,15 @@ export const metadata: Metadata = {
 
 
 
+import { Button } from "@/components/ui/button"
+
+
+
 export default function Home() {
     return (
-        <h1>hello</h1>
+        <div>
+            <Button>Click me</Button>
+            <h1>test</h1>
+        </div>
     );
 }
