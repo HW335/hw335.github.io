@@ -22,12 +22,12 @@ const components: { title: string; href: string;}[] = [
 
 export function Header() {
     return (
-        <ul className="fixed flex flex-row gap-3 p-6">
+        <ul className="fixed flex flex-row gap-3 m-6">
             {components.map((component) => (
-                <Button asChild key={component.title} className="hover:bg-white">
+                <Button asChild key={component.title} className="bg-white text-soft-black hover:bg-amber-400">
                     <Link href={component.href}>{component.title}</Link>
                 </Button>
             ))}
-      </ul>
+        </ul>
     )
 }
