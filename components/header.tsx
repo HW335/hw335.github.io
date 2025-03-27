@@ -6,18 +6,18 @@ import { Button } from "@/components/ui/button"
 
 
 const components: { title: string; href: string;}[] = [
-  {
-    title: "Home",
-    href: "/",
-  },
-  {
-    title: "Team",
-    href: "/team",
-  },
-  {
-    title: "404",
-    href: "/404",
-  },
+    {
+        title: "Home",
+        href: "/",
+    },
+    {
+        title: "Team",
+        href: "/team",
+    },
+    {
+        title: "404",
+        href: "/404",
+    },
 ]
 
 export function Header() {

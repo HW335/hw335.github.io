@@ -15,6 +15,20 @@ import {
 
 
 
+
+export const metadata: Metadata = {
+    icons: {
+        icon: [
+            {
+                url: "/logos/jc_stem_lab.png",
+                href: "/logos/jc_stem_lab.png",
+            },
+        ],
+    },
+};
+
+
+
 export default function RootLayout({
     children,
 }: Readonly<{
