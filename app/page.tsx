@@ -20,7 +20,7 @@ export default function Home() {
                     JC STEM
                 </h1>
                 <h1 className="font-bold text-6xl">
-                    Lab
+                    LAB
                 </h1>
             </div>
                 
