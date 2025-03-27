@@ -97,12 +97,11 @@ export default function Home() {
 
 
 
-            <FadeIn>
-                <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                    <Separator className="max-w-7xl mt-20"/>
-                </div>
-            </FadeIn>
+            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                <Separator className="max-w-7xl mt-20"/>
+            </div>
             
+
 
             <FadeIn>
                 <div className="w-full pl-6 pr-6 flex flex-col items-center">
@@ -128,14 +127,6 @@ export default function Home() {
                             </div>
                         ))}
                     </div>
-                </div>
-            </FadeIn>
-
-
-            
-            <FadeIn>
-                <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                    <Separator className="max-w-7xl mt-20"/>
                 </div>
             </FadeIn>
 
