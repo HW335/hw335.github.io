@@ -50,7 +50,7 @@ const members: { name: string; img: string; affiliation: string }[] = [
 
 export default function Home() {
     return (
-        <main id="#">
+        <main>
 
 
 
