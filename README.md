@@ -2,6 +2,7 @@
 - React
 - Next.js
 - Tailwind CSS
+- Typescript
 
 # Preview
 ```
