@@ -80,7 +80,7 @@ export default function Home() {
                                     src={member.img}
                                     alt={member.name}
                                     fill
-                                    className="h-full w-full rounded-md object-cover"
+                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
                                 />
                             </AspectRatio>
                             <span className="font-bold text-2xl">{member.name}</span>
@@ -113,7 +113,7 @@ export default function Home() {
                                     src={member.img}
                                     alt={member.name}
                                     fill
-                                    className="h-full w-full rounded-md object-cover"
+                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
                                 />
                             </AspectRatio>
                             <span className="font-bold text-2xl">{member.name}</span>
