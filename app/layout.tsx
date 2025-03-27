@@ -10,6 +10,10 @@ import "./globals.css";
 
 
 
+import { FadeIn } from "@/components/animation/fade-in"
+
+
+
 // font
 import { Inter } from "next/font/google";
 const inter = Inter({
@@ -88,9 +92,11 @@ export default function RootLayout({
 
 
 
-                <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                    <Separator className="max-w-7xl mt-20"/>
-                </div>
+                <FadeIn>
+                    <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                        <Separator className="max-w-7xl mt-20"/>
+                    </div>
+                </FadeIn>
 
                 
 

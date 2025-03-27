@@ -13,6 +13,10 @@ import { Separator } from "@/components/ui/separator"
 
 
 
+import { FadeIn } from "@/components/animation/fade-in"
+
+
+
 const members: { name: string; img: string; affiliation: string }[] = [
     {
         name: "Ping Luo",
@@ -58,76 +62,82 @@ export default function Home() {
             <div className="w-full h-96 flex flex-row justify-center items-end pl-6 pr-6 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500">
                 <div className="w-full max-w-7xl flex flex-row justify-start mb-20">
                     <h1 className="font-bold text-8xl sm:text-9xl text-white">
-                        Team
+                        <FadeIn>Team</FadeIn>
                     </h1>
                 </div>
             </div>
 
 
-
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
-                    <a href="#teir1" className="scroll-mt-20 group flex items-center" id="teir1">
-                        Tier 1
-                        <img src="/icons/link.png" className="ml-6 hidden group-hover:inline-block size-6"/>
-                    </a>
-                </h2>
-                <div className="w-full max-w-7xl mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-                    {members.map((member) => (
-                        <div className="flex flex-col gap-3" key={member.name}>
-                            <AspectRatio ratio={1/1}>
-                                <Image
-                                    src={member.img}
-                                    alt={member.name}
-                                    fill
-                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
-                                />
-                            </AspectRatio>
-                            <span className="font-bold text-2xl">{member.name}</span>
-                            <span>{member.affiliation}</span>
-                        </div>
-                    ))}
+            <FadeIn>
+                <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                    <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                        <a href="#teir1" className="scroll-mt-20 group flex items-center" id="teir1">
+                            Tier 1
+                            <img src="/icons/link.png" className="ml-6 hidden group-hover:inline-block size-6"/>
+                        </a>
+                    </h2>
+                    <div className="w-full max-w-7xl mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                        {members.map((member) => (
+                            <div className="flex flex-col gap-3" key={member.name}>
+                                <AspectRatio ratio={1/1}>
+                                    <Image
+                                        src={member.img}
+                                        alt={member.name}
+                                        fill
+                                        className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
+                                    />
+                                </AspectRatio>
+                                <span className="font-bold text-2xl">{member.name}</span>
+                                <span>{member.affiliation}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </FadeIn>
 
 
 
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <Separator className="max-w-7xl mt-20"/>
-            </div>
+            <FadeIn>
+                <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                    <Separator className="max-w-7xl mt-20"/>
+                </div>
+            </FadeIn>
             
 
-
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
-                    <a href="#teir2" className="scroll-mt-20 group flex items-center" id="teir2">
-                        Tier 2
-                        <img src="/icons/link.png" className="ml-6 hidden group-hover:inline-block size-6"/>
-                    </a>
-                </h2>
-                <div className="w-full max-w-7xl mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-                    {members.map((member) => (
-                        <div className="flex flex-col gap-3" key={member.name}>
-                            <AspectRatio ratio={1/1}>
-                                <Image
-                                    src={member.img}
-                                    alt={member.name}
-                                    fill
-                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
-                                />
-                            </AspectRatio>
-                            <span className="font-bold text-2xl">{member.name}</span>
-                            <span>{member.affiliation}</span>
-                        </div>
-                    ))}
+            <FadeIn>
+                <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                    <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
+                        <a href="#teir2" className="scroll-mt-20 group flex items-center" id="teir2">
+                            Tier 2
+                            <img src="/icons/link.png" className="ml-6 hidden group-hover:inline-block size-6"/>
+                        </a>
+                    </h2>
+                    <div className="w-full max-w-7xl mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                        {members.map((member) => (
+                            <div className="flex flex-col gap-3" key={member.name}>
+                                <AspectRatio ratio={1/1}>
+                                    <Image
+                                        src={member.img}
+                                        alt={member.name}
+                                        fill
+                                        className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
+                                    />
+                                </AspectRatio>
+                                <span className="font-bold text-2xl">{member.name}</span>
+                                <span>{member.affiliation}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </FadeIn>
 
 
             
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <Separator className="max-w-7xl mt-20"/>
-            </div>
+            <FadeIn>
+                <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                    <Separator className="max-w-7xl mt-20"/>
+                </div>
+            </FadeIn>
 
 
 
