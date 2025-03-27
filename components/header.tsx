@@ -7,12 +7,16 @@ import { Button } from "@/components/ui/button"
 
 const components: { title: string; href: string;}[] = [
   {
-    title: "About",
-    href: "/about",
+    title: "Home",
+    href: "/",
   },
   {
     title: "Team",
-    href: "team",
+    href: "/team",
+  },
+  {
+    title: "404",
+    href: "/404",
   },
 ]
 
