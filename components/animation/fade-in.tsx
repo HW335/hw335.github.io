@@ -14,7 +14,7 @@ function FadeIn({
             {...props}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: .1, duration: .6 }}
+            transition={{ delay: .3, duration: .6 }}
         >
             {children}
         </motion.div>
