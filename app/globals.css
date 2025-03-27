@@ -110,11 +110,20 @@
     --sidebar-ring: oklch(0.556 0 0);
 }
 
+
+@theme {
+    --color-o-blue: #00a0e8;
+}
+
+
 @layer base {
     * {
         @apply border-border outline-ring/50;
     }
     body {
         @apply bg-background text-foreground;
+    }
+    a, Button, Link {
+        @apply transition delay-100 duration-200;
     }
 }
