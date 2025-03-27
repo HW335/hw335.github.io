@@ -201,6 +201,7 @@ export default function RootLayout({
                             </div>
                             <div className="w-48 hidden 3xl:block overflow-hidden"></div>
                         </div>
+                        {/* --- */}
                         <div className="w-full pl-6 pr-6 flex flex-col items-center">
                             <div className="w-full max-w-7xl mt-20 flex items-center">
                                 <span className="select-none">
