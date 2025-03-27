@@ -9,6 +9,12 @@ const inter = Inter({
 
 
 
+import {
+    Header,
+} from "@/components/header"
+
+
+
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -17,7 +23,18 @@ export default function RootLayout({
     return (
         <html lang="en" className={inter.className}>
             <body>
+
+
+                <header>
+                    <Header/>
+                </header>
+
+
+
                 {children}
+
+
+                
             </body>
         </html>
     );
