@@ -35,23 +35,25 @@ const categories: { c1: string; c2s: [string] }[] = [
     {
         c1: "Topic",
         c2s: [
-            "tpcw1",
-            "cnwiji2",
+            "Embodied AI",
+            "Computer Vision",
         ]
     },
     {
         c1: "Year",
         c2s: [
-            "tpcw1",
-            "cnwiji2",
-            "dw",
+            "2025",
+            "2024",
+            "2023",
+            "2022",
+            "2021",
         ]
     },
     {
         c1: "PI",
         c2s: [
-            "tpcw1",
-            "cnwiji2",
+            "Ping Lup",
+            "Hongyang Li",
         ]
     },
 ]
