@@ -20,19 +20,21 @@ export default function NotFound() {
     return (
         <main>
             <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500 bg-fixed">
-                <FadeIn>
-                    <div className="w-full max-w-7xl flex flex-col gap-6 select-none">
+                <div className="w-full max-w-7xl flex flex-col gap-6 select-none">
+                    <FadeIn>
                         <h1 className="font-bold text-3xl sm:text-6xl text-white">
                             404
                         </h1>
+                    </FadeIn>
+                    <FadeIn>
                         <h1 className="font-bold text-3xl sm:text-6xl text-white">
                             Not Found
                         </h1>
-                        {/* <Link href="/" className='font-bold text-white hover:underline'>
-                            return home
-                        </Link> */}
-                    </div>
-                </FadeIn>
+                    </FadeIn>
+                    {/* <Link href="/" className='font-bold text-white hover:underline'>
+                        return home
+                    </Link> */}
+                </div>
             </div>
         </main>
     )
