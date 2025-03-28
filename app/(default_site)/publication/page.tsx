@@ -16,6 +16,16 @@ import {
     TabsList,
     TabsTrigger,
 } from "@/components/ui/tabs"
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
+
+
 
 import { FadeIn } from "@/components/animation/fade-in"
 
@@ -96,18 +106,55 @@ export default function Home() {
 
 
 
-                        <Tabs defaultValue="account1" >
-                            <TabsList className="grid w-full grid-cols-2">
-                                <TabsTrigger value="account1">Account</TabsTrigger>
-                                <TabsTrigger value="password1">Password</TabsTrigger>
-                            </TabsList>
-                            <TabsContent value="account1">
-                                <h1>account</h1>
-                            </TabsContent>
-                            <TabsContent value="password1">
-                                <h1>passowrd</h1>
-                            </TabsContent>
-                        </Tabs>
+                            <Tabs defaultValue="account1" className="mt-3">
+                                <TabsList className="grid w-full grid-cols-2">
+                                    <TabsTrigger value="account1">Account</TabsTrigger>
+                                    <TabsTrigger value="password1">Password</TabsTrigger>
+                                </TabsList>
+                                <TabsContent value="account1" className="mt-6">
+                                    <div className="grid w-full grid-cols-2 gap-6">
+                                        <Card>
+                                            <CardHeader>
+                                                <CardTitle>Card Title</CardTitle>
+                                                <CardDescription>Card Description</CardDescription>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <p>Card Content</p>
+                                            </CardContent>
+                                            <CardFooter>
+                                                <p>Card Footer</p>
+                                            </CardFooter>
+                                        </Card>
+                                        <Card>
+                                            <CardHeader>
+                                                <CardTitle>Card Title</CardTitle>
+                                                <CardDescription>Card Description</CardDescription>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <p>Card Content</p>
+                                            </CardContent>
+                                            <CardFooter>
+                                                <p>Card Footer</p>
+                                            </CardFooter>
+                                        </Card>
+                                        <Card>
+                                            <CardHeader>
+                                                <CardTitle>Card Title</CardTitle>
+                                                <CardDescription>Card Description</CardDescription>
+                                            </CardHeader>
+                                            <CardContent>
+                                                <p>Card Content</p>
+                                            </CardContent>
+                                            <CardFooter>
+                                                <p>Card Footer</p>
+                                            </CardFooter>
+                                        </Card>
+                                    </div>
+                                </TabsContent>
+                                <TabsContent value="password1">
+                                    <h1>passowrd</h1>
+                                </TabsContent>
+                            </Tabs>
 
 
 
