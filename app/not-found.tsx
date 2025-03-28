@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 
 
-import Link from 'next/link'
+// import Link from 'next/link'
 
 
 
@@ -28,9 +28,9 @@ export default function NotFound() {
                         <h1 className="font-bold text-3xl sm:text-6xl text-white">
                             Not Found
                         </h1>
-                        <Link href="/" className='font-bold text-white hover:underline'>
+                        {/* <Link href="/" className='font-bold text-white hover:underline'>
                             return home
-                        </Link>
+                        </Link> */}
                     </div>
                 </FadeIn>
             </div>
