@@ -135,7 +135,7 @@ export default function Home() {
                                         </TabsList>
                                         {c.c2s.map((c2) => (
                                             <TabsContent value={c2} key={c2} className="mt-6">
-                                                <div className="grid w-full grid-cols-2 gap-6">
+                                                <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-6">
                                                     {[...publications.values()].filter(publication => publication.keys.includes(c2)).map(( publication) => (
                                                         <FadeIn>
                                                             <div>
@@ -147,7 +147,7 @@ export default function Home() {
                                                                     <CardContent>
                                                                         <p>{publication.proceedings}</p>
                                                                     </CardContent>
-                                                                    <CardFooter className="flex flex-row gap-3">
+                                                                    <CardFooter className="flex flex-row gap-3 flex-wrap">
                                                                         {publication.links.map((link) => (
                                                                             <a href={link.url} target="_blank" className="hover:underline" key={link.website}>{link.website}</a>
                                                                         ))} 
