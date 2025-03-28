@@ -2,16 +2,10 @@ import type { Metadata } from "next";
 import * as React from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
-import Image from 'next/image'
 
 
 
 import "./globals.css";
-
-
-
-import { FadeIn } from "@/components/animation/fade-in"
 
 
 
@@ -43,6 +37,10 @@ const headers: { title: string; href: string;}[] = [
     {
         title: "Home",
         href: "/",
+    },
+    {
+        title: "Research",
+        href: "/research",
     },
     {
         title: "Publication",

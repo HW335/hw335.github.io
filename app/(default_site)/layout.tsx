@@ -1,7 +1,4 @@
-import type { Metadata } from "next";
 import * as React from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import Image from 'next/image'
 
