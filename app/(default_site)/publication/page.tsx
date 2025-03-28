@@ -60,15 +60,15 @@ const categories: { c1: string; c2s: string[]; }[] = [
 
 
 
-const pubblications: { title: string; authors: string; proceedings: string; links: { link: string; url: string; }[]; keys: string[]; }[] = [
+const pubblications: { title: string; authors: string; proceedings: string; links: { website: string; url: string; }[]; keys: string[]; }[] = [
     {
-        title: "Topic",
-        authors: "Topic",
-        proceedings: "",
+        title: "Planning-oriented autonomous driving",
+        authors: "Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li",
+        proceedings: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023",
         links: [
             {
-                link: "xxx",
-                url: "xxx",
+                website: "proceeding",
+                url: "https://openaccess.thecvf.com/content/CVPR2023/html/Hu_Planning-Oriented_Autonomous_Driving_CVPR_2023_paper.html",
             },
         ],
         keys :[
@@ -77,12 +77,16 @@ const pubblications: { title: string; authors: string; proceedings: string; link
     },
     {
         title: "Topic",
-        authors: "Topic",
-        proceedings: "",
+        authors: "scadj fijewaofcjw dw",
+        proceedings: "daf avrea ",
         links: [
             {
-                link: "xxx",
-                url: "xxx",
+                website: "xxx",
+                url: "https://opendrivelab.com",
+            },
+            {
+                website: "xdwxx",
+                url: "https://opendrivelab.com",
             },
         ],
         keys :[
@@ -172,18 +176,20 @@ export default function Home() {
                                         <TabsContent value={c2} className="mt-6">
                                             <div className="grid w-full grid-cols-2 gap-6">
                                                 {pubblications.map((pubblication) => (
-                                                <Card>
-                                                    <CardHeader>
-                                                        <CardTitle>Card Title</CardTitle>
-                                                        <CardDescription>Card Description</CardDescription>
-                                                    </CardHeader>
-                                                    <CardContent>
-                                                        <p>Card Content</p>
-                                                    </CardContent>
-                                                    <CardFooter>
-                                                        <p>Card Footer</p>
-                                                    </CardFooter>
-                                                </Card>
+                                                    <Card className="border-0">
+                                                        <CardHeader>
+                                                            <CardTitle className="text-xl">{pubblication.title}</CardTitle>
+                                                            <CardDescription>{pubblication.authors}</CardDescription>
+                                                        </CardHeader>
+                                                        <CardContent>
+                                                            <p>{pubblication.proceedings}</p>
+                                                        </CardContent>
+                                                        <CardFooter className="flex flex-row gap-3">
+                                                            {pubblication.links.map((link) => (
+                                                                <a href={link.url} target="_blank" className="hover:underline">{link.website}</a>
+                                                            ))} 
+                                                        </CardFooter>
+                                                    </Card>
                                                 ))}   
                                             </div>
                                         </TabsContent>
