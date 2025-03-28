@@ -165,18 +165,18 @@ export default function Home() {
                             <TabsTrigger value="PI">PI</TabsTrigger>
                         </TabsList>
                         {categories.map((c) => (
-                            <TabsContent value={c.c1}>
+                            <TabsContent value={c.c1} key={c.c1}>
                                 <Tabs defaultValue={c.c2s[0]} className="mt-3">
                                     <TabsList className={"grid w-full grid-cols-" + c.c2s.length}>
                                         {c.c2s.map((c2) => (
-                                            <TabsTrigger value={c2}>{c2}</TabsTrigger>
+                                            <TabsTrigger value={c2} key={c2}>{c2}</TabsTrigger>
                                         ))}
                                     </TabsList>
                                     {c.c2s.map((c2) => (
-                                        <TabsContent value={c2} className="mt-6">
+                                        <TabsContent value={c2} key={c2} className="mt-6">
                                             <div className="grid w-full grid-cols-2 gap-6">
                                                 {pubblications.map((pubblication) => (
-                                                    <Card className="border-0">
+                                                    <Card className="border-0" key={pubblication.title}>
                                                         <CardHeader>
                                                             <CardTitle className="text-xl">{pubblication.title}</CardTitle>
                                                             <CardDescription>{pubblication.authors}</CardDescription>
@@ -186,7 +186,7 @@ export default function Home() {
                                                         </CardContent>
                                                         <CardFooter className="flex flex-row gap-3">
                                                             {pubblication.links.map((link) => (
-                                                                <a href={link.url} target="_blank" className="hover:underline">{link.website}</a>
+                                                                <a href={link.url} target="_blank" className="hover:underline" key={link.website}>{link.website}</a>
                                                             ))} 
                                                         </CardFooter>
                                                     </Card>
