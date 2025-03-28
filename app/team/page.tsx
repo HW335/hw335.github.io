@@ -92,7 +92,7 @@ export default function Home() {
                                         className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
                                     />
                                 </AspectRatio>
-                                <span className="font-bold text-2xl">{member.name}</span>
+                                <span className="font-bold text-xl">{member.name}</span>
                                 <span>{member.affiliation}</span>
                             </div>
                         ))}
@@ -132,7 +132,7 @@ export default function Home() {
                                         className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
                                     />
                                 </AspectRatio>
-                                <span className="font-bold text-2xl">{member.name}</span>
+                                <span className="font-bold text-xl">{member.name}</span>
                                 <span>{member.affiliation}</span>
                             </div>
                         ))}
