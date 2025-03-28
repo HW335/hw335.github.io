@@ -133,22 +133,26 @@ export default function Home() {
                                             <TabsTrigger value={c2}>{c2}</TabsTrigger>
                                         ))}
                                     </TabsList>
-                                    <TabsContent value="account1" className="mt-6">
-                                        <div className="grid w-full grid-cols-2 gap-6">
-                                            <Card>
-                                                <CardHeader>
-                                                    <CardTitle>Card Title</CardTitle>
-                                                    <CardDescription>Card Description</CardDescription>
-                                                </CardHeader>
-                                                <CardContent>
-                                                    <p>Card Content</p>
-                                                </CardContent>
-                                                <CardFooter>
-                                                    <p>Card Footer</p>
-                                                </CardFooter>
-                                            </Card>
-                                        </div>
-                                    </TabsContent>                         
+                                    {c.c2s.map((c2) => (
+                                        <TabsContent value={c2} className="mt-6">
+                                            <div className="grid w-full grid-cols-2 gap-6">
+                                                {c.c2s.map((c2) => (
+                                                <Card>
+                                                    <CardHeader>
+                                                        <CardTitle>Card Title</CardTitle>
+                                                        <CardDescription>Card Description</CardDescription>
+                                                    </CardHeader>
+                                                    <CardContent>
+                                                        <p>Card Content</p>
+                                                    </CardContent>
+                                                    <CardFooter>
+                                                        <p>Card Footer</p>
+                                                    </CardFooter>
+                                                </Card>
+                                                ))}   
+                                            </div>
+                                        </TabsContent>
+                                    ))}                       
                                 </Tabs>       
                             </TabsContent>
                         ))}
