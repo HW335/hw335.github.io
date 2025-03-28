@@ -35,7 +35,7 @@ const categories: { c1: string; c2s: string[]; }[] = [
         c1: "Topic",
         c2s: [
             "Embodied AI",
-            "Computer Vision",
+            "Autonomous Driving",
         ]
     },
     {
@@ -44,14 +44,12 @@ const categories: { c1: string; c2s: string[]; }[] = [
             "2025",
             "2024",
             "2023",
-            "2022",
-            "2021",
         ]
     },
     {
         c1: "PI",
         c2s: [
-            "Ping Lup",
+            "Ping Luo",
             "Hongyang Li",
         ]
     },
@@ -139,20 +137,22 @@ export default function Home() {
                                             <TabsContent value={c2} key={c2} className="mt-6">
                                                 <div className="grid w-full grid-cols-2 gap-6">
                                                     {pubblications.map((pubblication) => (
-                                                        <Card className="border-0" key={pubblication.title}>
-                                                            <CardHeader>
-                                                                <CardTitle className="text-xl">{pubblication.title}</CardTitle>
-                                                                <CardDescription>{pubblication.authors}</CardDescription>
-                                                            </CardHeader>
-                                                            <CardContent>
-                                                                <p>{pubblication.proceedings}</p>
-                                                            </CardContent>
-                                                            <CardFooter className="flex flex-row gap-3">
-                                                                {pubblication.links.map((link) => (
-                                                                    <a href={link.url} target="_blank" className="hover:underline" key={link.website}>{link.website}</a>
-                                                                ))} 
-                                                            </CardFooter>
-                                                        </Card>
+                                                        <div>
+                                                            <Card className="border-0" key={pubblication.title}>
+                                                                <CardHeader>
+                                                                    <CardTitle className="text-xl">{pubblication.title}</CardTitle>
+                                                                    <CardDescription>{pubblication.authors}</CardDescription>
+                                                                </CardHeader>
+                                                                <CardContent>
+                                                                    <p>{pubblication.proceedings}</p>
+                                                                </CardContent>
+                                                                <CardFooter className="flex flex-row gap-3">
+                                                                    {pubblication.links.map((link) => (
+                                                                        <a href={link.url} target="_blank" className="hover:underline" key={link.website}>{link.website}</a>
+                                                                    ))} 
+                                                                </CardFooter>
+                                                            </Card>
+                                                        </div>
                                                     ))}   
                                                 </div>
                                             </TabsContent>
