@@ -136,9 +136,11 @@ export default function RootLayout({
                                             {footer.title}
                                         </h3>
                                         {footer.links.map((f) => (
-                                            <a key={f.subtitle} href={f.href} className="hover:underline">
-                                                {f.subtitle}
-                                            </a>
+                                            <div>
+                                                <a key={f.subtitle} href={f.href} className="hover:underline">
+                                                    {f.subtitle}
+                                                </a>
+                                            </div>
                                         ))}
                                     </div>
                                 ))}
