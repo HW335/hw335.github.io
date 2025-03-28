@@ -61,7 +61,7 @@ export default function Home() {
             {/* Landing */}
             <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500 bg-fixed">
                 <div className="w-full max-w-7xl flex flex-row justify-start">
-                    <h1 className="font-bold text-8xl sm:text-9xl text-white">
+                    <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
                         <FadeIn>Team</FadeIn>
                     </h1>
                 </div>
