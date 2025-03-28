@@ -187,12 +187,12 @@ export default function RootLayout({
                             </div>
                             <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 lg:grid-cols-4">
                                 {footers.map((footer) => (
-                                    <div className="flex flex-col gap-3">
+                                    <div key={footer.title} className="flex flex-col gap-3">
                                         <h3 className="font-bold text-xl mb-3">
                                             {footer.title}
                                         </h3>
                                         {footer.links.map((f) => (
-                                            <a href={f.href} className="hover:underline">
+                                            <a key={f.subtitle} href={f.href} className="hover:underline">
                                                 {f.subtitle}
                                             </a>
                                         ))}
