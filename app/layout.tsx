@@ -45,6 +45,10 @@ const headers: { title: string; href: string;}[] = [
         href: "/",
     },
     {
+        title: "Publication",
+        href: "/publication",
+    },
+    {
         title: "Team",
         href: "/team",
     },
