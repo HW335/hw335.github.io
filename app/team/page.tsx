@@ -81,7 +81,7 @@ export default function Home() {
                             </span> 
                         </a>
                     </h2>
-                    <div className="w-full max-w-7xl mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                         {members.map((member) => (
                             <div className="flex flex-col gap-3" key={member.name}>
                                 <AspectRatio ratio={1/1}>
@@ -121,7 +121,7 @@ export default function Home() {
                             </span>                        
                         </a>
                     </h2>
-                    <div className="w-full max-w-7xl mt-20 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                         {members.map((member) => (
                             <div className="flex flex-col gap-3" key={member.name}>
                                 <AspectRatio ratio={1/1}>
