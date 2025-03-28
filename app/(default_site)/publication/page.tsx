@@ -31,7 +31,7 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 
-const categories: { c1: string; c2s: [string] }[] = [
+const categories: { c1: string; c2s: string[]; }[] = [
     {
         c1: "Topic",
         c2s: [
@@ -55,6 +55,39 @@ const categories: { c1: string; c2s: [string] }[] = [
             "Ping Lup",
             "Hongyang Li",
         ]
+    },
+]
+
+
+
+const pubblications: { title: string; authors: string; proceedings: string; links: { link: string; url: string; }[]; keys: string[]; }[] = [
+    {
+        title: "Topic",
+        authors: "Topic",
+        proceedings: "",
+        links: [
+            {
+                link: "xxx",
+                url: "xxx",
+            },
+        ],
+        keys :[
+            "key1", "key2",
+        ],
+    },
+    {
+        title: "Topic",
+        authors: "Topic",
+        proceedings: "",
+        links: [
+            {
+                link: "xxx",
+                url: "xxx",
+            },
+        ],
+        keys :[
+            "key1", "key2", "key22",
+        ],
     },
 ]
 
@@ -138,7 +171,7 @@ export default function Home() {
                                     {c.c2s.map((c2) => (
                                         <TabsContent value={c2} className="mt-6">
                                             <div className="grid w-full grid-cols-2 gap-6">
-                                                {c.c2s.map((c2) => (
+                                                {pubblications.map((pubblication) => (
                                                 <Card>
                                                     <CardHeader>
                                                         <CardTitle>Card Title</CardTitle>
