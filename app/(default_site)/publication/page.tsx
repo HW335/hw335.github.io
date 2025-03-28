@@ -31,8 +31,29 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 
-const topics = ["fwdowdk", "fwd"]
-const years = ["2025", "2024"]
+const categories: { c1: string; c2s: [string] }[] = [
+    {
+        c1: "Topic",
+        c2s: [
+            "tpcw1",
+            "cnwiji2",
+        ]
+    },
+    {
+        c1: "Year",
+        c2s: [
+            "tpcw1",
+            "cnwiji2",
+        ]
+    },
+    {
+        c1: "PI",
+        c2s: [
+            "tpcw1",
+            "cnwiji2",
+        ]
+    },
+]
 
 
 
@@ -97,71 +118,51 @@ export default function Home() {
                 <div className="w-full max-w-7xl mt-20">
 
 
-                    <Tabs defaultValue="account" >
-                        <TabsList className="grid w-full grid-cols-2">
-                            <TabsTrigger value="account">Account</TabsTrigger>
-                            <TabsTrigger value="password">Password</TabsTrigger>
+                    <Tabs defaultValue="Topic" >
+                        <TabsList className="grid w-full grid-cols-3">
+                            <TabsTrigger value="Topic">Topic</TabsTrigger>
+                            <TabsTrigger value="Year">Year</TabsTrigger>
+                            <TabsTrigger value="PI">PI</TabsTrigger>
                         </TabsList>
+                        {categories.map((c) => (
+                            <TabsContent value={c.c1}>
+                                <Tabs defaultValue="account1" className="mt-3">
+                                    <TabsList className="grid w-full grid-cols-2">
+                                        <TabsTrigger value="account1">Account</TabsTrigger>
+                                        <TabsTrigger value="password1">Password</TabsTrigger>
+                                    </TabsList>
+                                    <TabsContent value="account1" className="mt-6">
+                                        <div className="grid w-full grid-cols-2 gap-6">
+                                            <Card>
+                                                <CardHeader>
+                                                    <CardTitle>Card Title</CardTitle>
+                                                    <CardDescription>Card Description</CardDescription>
+                                                </CardHeader>
+                                                <CardContent>
+                                                    <p>Card Content</p>
+                                                </CardContent>
+                                                <CardFooter>
+                                                    <p>Card Footer</p>
+                                                </CardFooter>
+                                            </Card>
+                                        </div>
+                                    </TabsContent>
+                                    <TabsContent value="password1">
+                                        <h1>passowrd</h1>
+                                    </TabsContent>
+                                </Tabs>
+                            </TabsContent>
+                        ))}
                         <TabsContent value="account">
 
 
 
-                            <Tabs defaultValue="account1" className="mt-3">
-                                <TabsList className="grid w-full grid-cols-2">
-                                    <TabsTrigger value="account1">Account</TabsTrigger>
-                                    <TabsTrigger value="password1">Password</TabsTrigger>
-                                </TabsList>
-                                <TabsContent value="account1" className="mt-6">
-                                    <div className="grid w-full grid-cols-2 gap-6">
-                                        <Card>
-                                            <CardHeader>
-                                                <CardTitle>Card Title</CardTitle>
-                                                <CardDescription>Card Description</CardDescription>
-                                            </CardHeader>
-                                            <CardContent>
-                                                <p>Card Content</p>
-                                            </CardContent>
-                                            <CardFooter>
-                                                <p>Card Footer</p>
-                                            </CardFooter>
-                                        </Card>
-                                        <Card>
-                                            <CardHeader>
-                                                <CardTitle>Card Title</CardTitle>
-                                                <CardDescription>Card Description</CardDescription>
-                                            </CardHeader>
-                                            <CardContent>
-                                                <p>Card Content</p>
-                                            </CardContent>
-                                            <CardFooter>
-                                                <p>Card Footer</p>
-                                            </CardFooter>
-                                        </Card>
-                                        <Card>
-                                            <CardHeader>
-                                                <CardTitle>Card Title</CardTitle>
-                                                <CardDescription>Card Description</CardDescription>
-                                            </CardHeader>
-                                            <CardContent>
-                                                <p>Card Content</p>
-                                            </CardContent>
-                                            <CardFooter>
-                                                <p>Card Footer</p>
-                                            </CardFooter>
-                                        </Card>
-                                    </div>
-                                </TabsContent>
-                                <TabsContent value="password1">
-                                    <h1>passowrd</h1>
-                                </TabsContent>
-                            </Tabs>
+
 
 
 
                         </TabsContent>
-                        <TabsContent value="password">
-                            <h1>passowrd</h1>
-                        </TabsContent>
+
                     </Tabs>
 
 
