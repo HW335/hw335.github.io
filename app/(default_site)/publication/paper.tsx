@@ -1,4 +1,4 @@
-export const pubblications: { title: string; authors: string; proceedings: string; links: { website: string; url: string; }[]; keys: string[]; }[] = [
+export const publications: { title: string; authors: string; proceedings: string; links: { website: string; url: string; }[]; keys: string[]; }[] = [
     {
         title: "Planning-oriented Autonomous Driving",
         authors: "Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li",

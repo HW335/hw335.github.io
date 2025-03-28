@@ -22,7 +22,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import { pubblications } from "./paper"
+import { publications } from "./paper"
 
 
 
@@ -136,23 +136,25 @@ export default function Home() {
                                         {c.c2s.map((c2) => (
                                             <TabsContent value={c2} key={c2} className="mt-6">
                                                 <div className="grid w-full grid-cols-2 gap-6">
-                                                    {pubblications.map((pubblication) => (
-                                                        <div>
-                                                            <Card className="border-0" key={pubblication.title}>
-                                                                <CardHeader>
-                                                                    <CardTitle className="text-xl">{pubblication.title}</CardTitle>
-                                                                    <CardDescription>{pubblication.authors}</CardDescription>
-                                                                </CardHeader>
-                                                                <CardContent>
-                                                                    <p>{pubblication.proceedings}</p>
-                                                                </CardContent>
-                                                                <CardFooter className="flex flex-row gap-3">
-                                                                    {pubblication.links.map((link) => (
-                                                                        <a href={link.url} target="_blank" className="hover:underline" key={link.website}>{link.website}</a>
-                                                                    ))} 
-                                                                </CardFooter>
-                                                            </Card>
-                                                        </div>
+                                                    {[...publications.values()].filter(publication => publication.keys.includes(c2)).map(( publication) => (
+                                                        <FadeIn>
+                                                            <div>
+                                                                <Card className="border-border" key={publication.title}>
+                                                                    <CardHeader>
+                                                                        <CardTitle className="text-xl">{publication.title}</CardTitle>
+                                                                        <CardDescription>{publication.authors}</CardDescription>
+                                                                    </CardHeader>
+                                                                    <CardContent>
+                                                                        <p>{publication.proceedings}</p>
+                                                                    </CardContent>
+                                                                    <CardFooter className="flex flex-row gap-3">
+                                                                        {publication.links.map((link) => (
+                                                                            <a href={link.url} target="_blank" className="hover:underline" key={link.website}>{link.website}</a>
+                                                                        ))} 
+                                                                    </CardFooter>
+                                                                </Card>
+                                                            </div>
+                                                        </FadeIn>
                                                     ))}   
                                                 </div>
                                             </TabsContent>
