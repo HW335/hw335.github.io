@@ -44,6 +44,7 @@ const categories: { c1: string; c2s: [string] }[] = [
         c2s: [
             "tpcw1",
             "cnwiji2",
+            "dw",
         ]
     },
     {
@@ -126,10 +127,11 @@ export default function Home() {
                         </TabsList>
                         {categories.map((c) => (
                             <TabsContent value={c.c1}>
-                                <Tabs defaultValue="account1" className="mt-3">
-                                    <TabsList className="grid w-full grid-cols-2">
-                                        <TabsTrigger value="account1">Account</TabsTrigger>
-                                        <TabsTrigger value="password1">Password</TabsTrigger>
+                                <Tabs defaultValue={c.c2s[0]} className="mt-3">
+                                    <TabsList className={"grid w-full grid-cols-" + c.c2s.length}>
+                                        {c.c2s.map((c2) => (
+                                            <TabsTrigger value={c2}>{c2}</TabsTrigger>
+                                        ))}
                                     </TabsList>
                                     <TabsContent value="account1" className="mt-6">
                                         <div className="grid w-full grid-cols-2 gap-6">
@@ -146,18 +148,11 @@ export default function Home() {
                                                 </CardFooter>
                                             </Card>
                                         </div>
-                                    </TabsContent>
-                                    <TabsContent value="password1">
-                                        <h1>passowrd</h1>
-                                    </TabsContent>
-                                </Tabs>
+                                    </TabsContent>                         
+                                </Tabs>       
                             </TabsContent>
                         ))}
                         <TabsContent value="account">
-
-
-
-
 
 
 
