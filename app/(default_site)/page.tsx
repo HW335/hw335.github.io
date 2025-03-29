@@ -7,7 +7,14 @@ export const metadata: Metadata = {
 
 
 
-import Image from 'next/image'
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
 
 
 
@@ -15,6 +22,10 @@ import { FadeIn } from "@/components/animation/fade-in"
 import { RollinggText1 } from "@/components/animation/rolling-text-1"
 import { RollinggText2 } from "@/components/animation/rolling-text-2"
 import { RollinggText3 } from "@/components/animation/rolling-text-3"
+
+
+
+import { news } from "@/data/news"
 
 
 
@@ -41,16 +52,69 @@ export default function Home() {
 
 
 
-            <h2 className='p-6 lg:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl gap-3'>
-                <RollinggText1/>
-                <RollinggText2/>
-                <RollinggText3/>
-            </h2>
+            <FadeIn>
+                <h2 className='p-6 pt-10 pb-10 md:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl gap-3 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500'>
+                    <RollinggText1/>
+                    <RollinggText2/>
+                    <RollinggText3/>
+                </h2>
+            </FadeIn>
 
 
 
-            <div>
-                
+            <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
+                <h2 className="w-full max-w-7xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold flex flex-col gap-3"> 
+                    <FadeIn>
+                        Explore
+                    </FadeIn>
+                    <FadeIn>
+                        News and Highlights
+                    </FadeIn>
+                </h2>
+            </div>
+            <div className="w-full pl-6 pr-6 flex flex-col items-center mb-20">
+                <div className="w-full max-w-7xl mt-10 flex flex-col lg:flex-row justify-between gap-6">
+                    <div className="w-full flex flex-col gap-6">
+                        {news.slice(0,2).map((item) => (
+                            <FadeIn key={item.title}>
+                                <div>
+                                    <Card className="border-border bg-pink-800">
+                                        <CardHeader>
+                                            <CardTitle className="text-xl text-white">{item.title}</CardTitle>
+                                            <CardDescription className="text-white">{item.date}</CardDescription>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <p className="text-white">{item.detail}</p>
+                                        </CardContent>
+                                        <CardFooter className="text-white flex justify-end">
+                                            <a href={item.link} target="_blank" className="hover:underline">More</a>
+                                        </CardFooter>
+                                    </Card>
+                                </div>
+                            </FadeIn>
+                        ))}   
+                    </div>
+                    <div className="w-full flex flex-col gap-6">
+                        {news.slice(2,news.length).map((item) => (
+                            <FadeIn key={item.title}>
+                                <div>
+                                    <Card className="border-pink-800 bg-pink-800" key={item.title}>
+                                        <CardHeader>
+                                            <CardTitle className="text-xl text-white">{item.title}</CardTitle>
+                                            <CardDescription className="text-white italic">{item.date}</CardDescription>
+                                        </CardHeader>
+                                        <CardContent>
+                                            <p className="text-white">{item.detail}</p>
+                                        </CardContent>
+                                        <CardFooter className="text-white flex justify-end">
+                                            <a href={item.link} target="_blank" className="hover:underline">More</a>
+                                        </CardFooter>
+                                    </Card>
+                                </div>
+                            </FadeIn>
+                        ))}   
+                    </div>
+                </div>
             </div>
             
                 

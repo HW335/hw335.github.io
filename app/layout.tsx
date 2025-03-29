@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 // header
 const headers: { title: string; href: string;}[] = [
     {
-        title: "Home",
+        title: "MMLab",
         href: "/",
     },
     {

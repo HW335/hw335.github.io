@@ -27,11 +27,11 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 
 
 
-import { publications, categories } from "@/data/publication"
-
-
-
 import { FadeIn } from "@/components/animation/fade-in"
+
+
+
+import { publications, categories } from "@/data/publication"
 
 
 
