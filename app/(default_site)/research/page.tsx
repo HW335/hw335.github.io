@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 
-
+import { Separator } from "@/components/ui/separator"
 import Image from 'next/image'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
@@ -33,19 +33,71 @@ export default function Home() {
             </div>
 
 
-
-            <div className="w-full pl-6 pr-6 pt-20 flex flex-col md:flex-row justify-between">
-                <div>
-                    {/* <AspectRatio ratio={1/1}>
-                        <Image
-                            src="https://opendrivelab.com/assets/background/agibot_world.jpg"
-                            alt="img"
-                            fill
-                            className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
-                        />
-                    </AspectRatio> */}
+            <FadeIn>
+                <div className="w-full pl-6 pr-6 pt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
+                    <div className="flex-1/3">
+                        <AspectRatio ratio={1/1}>
+                            <Image
+                                src="/logos/jc_stem_lab.png"
+                                alt="img"
+                                fill
+                                className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
+                            />
+                        </AspectRatio>
+                    </div>
+                    <div className="flex-2/3 flex flex-col gap-6">
+                        <h1 className="text-xl font-bold">
+                            AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
+                        </h1>
+                        <p>
+                            We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
+                        </p><p>
+                            Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios. 
+                        </p><p>
+                            GO-1 exhibits exceptional capability in real-world dexterous and long-horizon tasks, achieving over 60% success rate on complex tasks and outperforming prior RDT approach by 32%. 
+                        </p><p>
+                            By open-sourcing the dataset, tools, and models, we aim to democratize access to large-scale, high-quality robot data, advancing the pursuit of scalable and general-purpose intelligence.
+                        </p>
+                    </div>
                 </div>
+            </FadeIn>
+
+
+
+            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                <Separator className="max-w-7xl mt-20"/>
             </div>
+
+
+
+            <FadeIn>
+                <div className="w-full pl-6 pr-6 pt-20 flex flex-col gap-10 md:flex-row-reverse md:gap-20 justify-between">
+                    <div className="flex-1/3">
+                        <AspectRatio ratio={1/1}>
+                            <Image
+                                src="/logos/jc_stem_lab.png"
+                                alt="img"
+                                fill
+                                className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
+                            />
+                        </AspectRatio>
+                    </div>
+                    <div className="flex-2/3 flex flex-col gap-6">
+                        <h1 className="text-xl font-bold">
+                            AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
+                        </h1>
+                        <p>
+                            We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
+                        </p><p>
+                            Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios. 
+                        </p><p>
+                            GO-1 exhibits exceptional capability in real-world dexterous and long-horizon tasks, achieving over 60% success rate on complex tasks and outperforming prior RDT approach by 32%. 
+                        </p><p>
+                            By open-sourcing the dataset, tools, and models, we aim to democratize access to large-scale, high-quality robot data, advancing the pursuit of scalable and general-purpose intelligence.
+                        </p>
+                    </div>
+                </div>
+            </FadeIn>
 
 
 
