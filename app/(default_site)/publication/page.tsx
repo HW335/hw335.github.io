@@ -30,13 +30,14 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 
-const categories: { c1: string; c2s: string[]; }[] = [
+const categories: { c1: string; c2s: string[]; len: string}[] = [
     {
         c1: "Topic",
         c2s: [
             "Embodied AI",
             "Autonomous Driving",
-        ]
+        ],
+        len: "grid-cols-2", // for unexpected error in shadcn component
     },
     {
         c1: "Year",
@@ -44,14 +45,18 @@ const categories: { c1: string; c2s: string[]; }[] = [
             "2025",
             "2024",
             "2023",
-        ]
+            "2022",
+            "2021",
+        ],
+        len: "grid-cols-5", // for unexpected error in shadcn component
     },
     {
         c1: "PI",
         c2s: [
             "Ping Luo",
             "Hongyang Li",
-        ]
+        ],
+        len: "grid-cols-2", // for unexpected error in shadcn component
     },
 ]
 
@@ -128,7 +133,7 @@ export default function Home() {
                             {categories.map((c) => (
                                 <TabsContent value={c.c1} key={c.c1}>
                                     <Tabs defaultValue={c.c2s[0]} className="mt-3">
-                                        <TabsList className={"grid w-full grid-cols-" + c.c2s.length}>
+                                        <TabsList className={"grid w-full " + c.len}>
                                             {c.c2s.map((c2) => (
                                                 <TabsTrigger value={c2} key={c2}>{c2}</TabsTrigger>
                                             ))}
