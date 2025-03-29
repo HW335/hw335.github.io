@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-    title: "404",
+    title: "404 | MMLab",
     description: "404 Not Found",
-    keywords: ["404"],
+    keywords: ["404", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
 };
 
 

@@ -40,6 +40,6 @@ export const RollinggText2 = () => {
     }, [])
 
     return (
-        <span className={fadeProp.fade}>{WORDS_TO_ANIMATE[wordOrder]}</span>
+        <span className='text-white'><span className={fadeProp.fade}>{WORDS_TO_ANIMATE[wordOrder]}</span></span>
     )
 }

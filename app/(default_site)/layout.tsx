@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Separator } from "@/components/ui/separator"
 import Image from 'next/image'
 
 
@@ -23,60 +22,64 @@ const inter = Inter({
 
 
 // footer
-const footers: { title: string; links: { subtitle: string; href: string; }[];}[] = [
+const footers: { title: string; links: { subtitle: string; href: string; target: string; }[];}[] = [
     {
-        title: "About",
+        title: "Research",
         links: [
             {
-                subtitle: "Team",
-                href: "/team",
+                subtitle: "Embodied AI",
+                href: "/research#embodied",
+                target: "_self",
             },
             {
-                subtitle: "Team",
-                href: "/team",
-            },
-            {
-                subtitle: "Team",
-                href: "/team",
+                subtitle: "Autonomous Driving",
+                href: "/research#ad",
+                target: "_self",
             },
         ],
     },
     {
-        title: "About",
+        title: "Publication",
         links: [
             {
-                subtitle: "Team",
-                href: "/team",
+                subtitle: "Selected Works",
+                href: "/publication#selected",
+                target: "_self",
             },
             {
-                subtitle: "Team",
-                href: "/team",
+                subtitle: "Gallery",
+                href: "/publication#gallery",
+                target: "_self",
             },
         ],
     },
     {
-        title: "About",
+        title: "Team",
         links: [
             {
                 subtitle: "Team",
                 href: "/team",
-            },
-            {
-                subtitle: "Team",
-                href: "/team",
-            },
-            {
-                subtitle: "Team",
-                href: "/team",
+                target: "_self",
             },
         ],
     },
     {
-        title: "About",
+        title: "MMLab",
         links: [
             {
-                subtitle: "Team",
-                href: "/team",
+                subtitle: "@ HKU",
+                href: "/",
+                target: "_self",
+            },
+            {
+                subtitle: "@ CUHK",
+                href: "https://mmlab.ie.cuhk.edu.hk/",
+                target: "_blank",
+            },
+            {
+                subtitle: "@ NTU",
+                href: "https://www.mmlab-ntu.com/",
+                target: "_blank",
             },
         ],
     },
@@ -103,11 +106,8 @@ export default function RootLayout({
                     <footer className="w-full mb-20 flex flex-col gab-10">
                         <div className="w-full pl-6 pr-6 flex flex-col items-center 3xl:hidden">
                             <div className="w-full max-w-7xl mt-20 flex gap-10 items-center">
-                                <div>
-                                    <Image src="/logos/jc_stem_lab.png" width={50} height={50} alt="logo"/>
-                                </div>
                                 <span className="font-bold text-4xl">
-                                    JC STEM LAB
+                                    MMLab | Multimedia Laboratory
                                 </span>
                             </div>
                         </div>
@@ -115,11 +115,8 @@ export default function RootLayout({
                         <div className="w-full pl-6 pr-6 flex justify-center 3xl:justify-evenly">
                             <div className="w-48 hidden 3xl:block overflow-hidden">
                                 <div className="w-full max-w-7xl mt-20 flex flex-col gap-3">
-                                    <div>
-                                        <Image src="/logos/jc_stem_lab.png" width={80} height={80} alt="logo"/>
-                                    </div>
                                     <span className="font-bold text-4xl">
-                                        JC STEM LAB
+                                        MMLab
                                     </span>
                                 </div>
                             </div>
@@ -130,8 +127,8 @@ export default function RootLayout({
                                             {footer.title}
                                         </h3>
                                         {footer.links.map((f) => (
-                                            <div>
-                                                <a key={f.subtitle} href={f.href} className="hover:underline">
+                                            <div key={f.subtitle}>
+                                                <a key={f.subtitle} href={f.href} target={f.target} className="hover:underline">
                                                     {f.subtitle}
                                                 </a>
                                             </div>
