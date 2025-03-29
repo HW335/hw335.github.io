@@ -24,43 +24,14 @@ import {
 } from "@/components/ui/card"
 import Image from 'next/image'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-import { publications } from "./paper"
+
+
+
+import { publications, categories } from "@/data/publication"
 
 
 
 import { FadeIn } from "@/components/animation/fade-in"
-
-
-
-const categories: { c1: string; c2s: string[]; len: string}[] = [
-    {
-        c1: "Topic",
-        c2s: [
-            "Embodied AI",
-            "Autonomous Driving",
-        ],
-        len: "grid-cols-2", // for unexpected error in shadcn component
-    },
-    {
-        c1: "Year",
-        c2s: [
-            "2025",
-            "2024",
-            "2023",
-            "2022",
-            "2021",
-        ],
-        len: "grid-cols-5", // for unexpected error in shadcn component
-    },
-    {
-        c1: "PI",
-        c2s: [
-            "Ping Luo",
-            "Hongyang Li",
-        ],
-        len: "grid-cols-2", // for unexpected error in shadcn component
-    },
-]
 
 
 

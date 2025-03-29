@@ -1,3 +1,36 @@
+export const categories: { c1: string; c2s: string[]; len: string}[] = [
+    {
+        c1: "Topic",
+        c2s: [
+            "Embodied AI",
+            "Autonomous Driving",
+        ],
+        len: "grid-cols-2", // for unexpected error in shadcn component
+    },
+    {
+        c1: "Year",
+        c2s: [
+            "2025",
+            "2024",
+            "2023",
+            "2022",
+            "2021",
+        ],
+        len: "grid-cols-5", // for unexpected error in shadcn component
+    },
+    {
+        c1: "PI",
+        c2s: [
+            "Ping Luo",
+            "Hongyang Li",
+        ],
+        len: "grid-cols-2", // for unexpected error in shadcn component
+    },
+]
+
+
+
+
 export const publications: { title: string; authors: string; proceedings: string; links: { website: string; url: string; }[]; keys: string[]; }[] = [
     {
         title: "Planning-oriented Autonomous Driving",
