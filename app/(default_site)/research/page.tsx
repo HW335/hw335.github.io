@@ -6,10 +6,6 @@ export const metadata: Metadata = {
 };
 
 
-import Image from 'next/image'
-import { AspectRatio } from "@/components/ui/aspect-ratio"
-
-
 
 import { FadeIn } from "@/components/animation/fade-in"
 
@@ -32,14 +28,15 @@ export default function Home() {
             </div>
 
 
+
             <FadeIn>
                 <div className="w-full flex flex-col lg:flex-row">
                     <div className="flex-1/3 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500">
-                        <h2 className="p-6 lg:p-20 min-h-64 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
+                        <h2 className="p-6 lg:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
                             Embodied AI
                         </h2>
                     </div>
-                    <div className="flex-2/3 flex flex-col p-6 pt-10 pb-10 lg:p-20">
+                    <div className="flex-2/3 flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6">
                         <h1 className="text-xl font-bold">
                             AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
                         </h1>
@@ -61,11 +58,11 @@ export default function Home() {
             <FadeIn>
                 <div className="w-full flex flex-col lg:flex-row-reverse">
                     <div className="flex-1/3 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500">
-                        <h2 className="p-6 lg:p-20 min-h-64 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
+                        <h2 className="p-6 lg:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
                             Embodied AI
                         </h2>
                     </div>
-                    <div className="flex-2/3 flex flex-col p-6 pt-10 pb-10 lg:p-20">
+                    <div className="flex-2/3 flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6">
                         <h1 className="text-xl font-bold">
                             AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
                         </h1>
@@ -81,7 +78,6 @@ export default function Home() {
                     </div>
                 </div>
             </FadeIn>
-
 
 
 
