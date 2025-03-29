@@ -124,6 +124,13 @@
         @apply transition delay-100 duration-200;
     }
 }
+.animated-underline {
+    border-bottom: 1px solid transparent;
+    @apply transition delay-100 duration-200;
+}
+.animated-underline:hover{
+    @apply border-b-inherit
+}
 
 
 

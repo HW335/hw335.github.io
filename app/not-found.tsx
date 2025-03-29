@@ -31,7 +31,7 @@ export default function NotFound() {
                             Not Found
                         </h1>
                     </FadeIn>
-                    {/* <Link href="/" className='font-bold text-white hover:underline'>
+                    {/* <Link href="/" className='font-bold text-white animated-underline'>
                         return home
                     </Link> */}
                 </div>

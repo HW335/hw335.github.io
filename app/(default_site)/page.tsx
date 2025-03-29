@@ -87,7 +87,7 @@ export default function Home() {
                                             <p className="text-white">{item.detail}</p>
                                         </CardContent>
                                         <CardFooter className="text-white flex justify-end">
-                                            <a href={item.link} target="_blank" className="hover:underline">More</a>
+                                            <a href={item.link} target="_blank" className="animated-underline">More</a>
                                         </CardFooter>
                                     </Card>
                                 </div>
@@ -107,7 +107,7 @@ export default function Home() {
                                             <p className="text-white">{item.detail}</p>
                                         </CardContent>
                                         <CardFooter className="text-white flex justify-end">
-                                            <a href={item.link} target="_blank" className="hover:underline">More</a>
+                                            <a href={item.link} target="_blank" className="animated-underline">More</a>
                                         </CardFooter>
                                     </Card>
                                 </div>
@@ -158,7 +158,7 @@ export default function Home() {
                                 </p>
                             </FadeIn>
                             <div className="flex justify-end mt-6">
-                                <FadeIn><a href="https://mmlab.ie.cuhk.edu.hk/" target="_blank" className="text-[#e59c2e] hover:underline">More</a></FadeIn>
+                                <FadeIn><a href="https://mmlab.ie.cuhk.edu.hk/" target="_blank" className="text-[#e59c2e] animated-underline">More</a></FadeIn>
                             </div>
                         </div>
                     </div>
@@ -177,16 +177,16 @@ export default function Home() {
                             </FadeIn>
                             <FadeIn>
                                 <p className="text-white">
-                                    Members in MMLab@NTU conduct research primarily in low-level vision, image and video understanding, and generative AI. Have a look at the overview of <a href="https://www.mmlab-ntu.com/research.html" target="_blank" className="text-[#D71440] hover:underline">our research</a>. All publications are listed <a href="https://www.mmlab-ntu.com/publication_topic.html" target="_blank" className="text-[#D71440] hover:underline">here</a>. 
+                                    Members in MMLab@NTU conduct research primarily in low-level vision, image and video understanding, and generative AI. Have a look at the overview of <a href="https://www.mmlab-ntu.com/research.html" target="_blank" className="text-[#D71440] animated-underline">our research</a>. All publications are listed <a href="https://www.mmlab-ntu.com/publication_topic.html" target="_blank" className="text-[#D71440] animated-underline">here</a>. 
                                 </p>
                             </FadeIn>
                             <FadeIn>
                                 <p className="text-white">
-                                    We are always looking for motivated PhD students, postdocs, research assistants who have the same interests like us. Check out the <a href="https://www.mmlab-ntu.com/careers.html" target="_blank" className="text-[#D71440] hover:underline">careers</a> page and follow us on <a href="https://twitter.com/MMLabNTU" target="_blank" className="text-[#D71440] hover:underline">Twitter</a>.
+                                    We are always looking for motivated PhD students, postdocs, research assistants who have the same interests like us. Check out the <a href="https://www.mmlab-ntu.com/careers.html" target="_blank" className="text-[#D71440] animated-underline">careers</a> page and follow us on <a href="https://twitter.com/MMLabNTU" target="_blank" className="text-[#D71440] animated-underline">Twitter</a>.
                                 </p>
                             </FadeIn>
                             <div className="flex justify-end mt-6">
-                                <FadeIn><a href="https://www.mmlab-ntu.com/" target="_blank" className="text-[#D71440] hover:underline">More</a></FadeIn>
+                                <FadeIn><a href="https://www.mmlab-ntu.com/" target="_blank" className="text-[#D71440] animated-underline">More</a></FadeIn>
                             </div>
                         </div>
                     </div>

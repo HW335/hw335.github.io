@@ -145,7 +145,7 @@ export default function RootLayout({
                                         </h3>
                                         {footer.links.map((f) => (
                                             <div key={f.subtitle}>
-                                                <a key={f.subtitle} href={f.href} target={f.target} className="hover:underline select-none">
+                                                <a key={f.subtitle} href={f.href} target={f.target} className="animated-underline select-none">
                                                     {f.subtitle}
                                                 </a>
                                             </div>
@@ -157,7 +157,7 @@ export default function RootLayout({
                                 <div className="w-full mt-20 flex flex-row flex-wrap gap-6 select-none">
 
                                     {/* to keep the same */}
-                                    <a href="https://x.com/" target="_blank" className="hover:underline select-none hover:opacity-30">
+                                    <a href="https://x.com/" target="_blank" className="animated-underline select-none hover:opacity-30">
                                         <svg className="size-8 text-foreground" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
                                         </svg>
@@ -171,7 +171,7 @@ export default function RootLayout({
                             <div className="w-full max-w-7xl mt-20 flex gap-6 flex-wrap">
 
                                 {/* to keep the same */}
-                                <a href="https://x.com/" target="_blank" className="hover:underline select-none hover:opacity-30">
+                                <a href="https://x.com/" target="_blank" className="animated-underline select-none hover:opacity-30">
                                     <svg className="size-8 text-foreground" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
                                     </svg>
@@ -188,36 +188,31 @@ export default function RootLayout({
                                     <span className="select-none">
                                         All Rights Reserved
                                     </span>
-                                    <Dialog>
-                                        <DialogTrigger asChild>
-                                            <span className="hover:underline cursor-pointer select-none">Site Credits</span>
-                                        </DialogTrigger>
-                                        <DialogContent className="sm:max-w-3xl p-6">
-                                            <DialogHeader className="p-3">
-                                                <DialogTitle>
-                                                    Site Credits
-                                                </DialogTitle>
-                                                <div className="w-full flex flex-col items-center">
-                                                    <Separator className="mt-3"/>
-                                                </div>
-                                                <DialogDescription className="mt-3">
-                                                    <span>
-                                                        Thanks to the following site developers and all lab members for contributions.
-                                                    </span>
-                                                    <ul className="mt-3 ml-6 space-y-3 list-outside list-disc">
-                                                        <li><a href="https://faikit.github.io/" target="_blank" className="hover:underline">Huijie Wang</a></li>
-                                                    </ul>
-                                                </DialogDescription>
-                                            </DialogHeader>
-                                            {/* <DialogFooter className="sm:justify-start">
-                                            <DialogClose asChild>
-                                                <Button type="button" variant="secondary">
-                                                Close
-                                                </Button>
-                                            </DialogClose>
-                                            </DialogFooter> */}
-                                        </DialogContent>
-                                    </Dialog>
+                                    <div>
+                                        <Dialog>
+                                            <DialogTrigger asChild>
+                                                <span className="animated-underline cursor-pointer select-none">Site Credits</span>
+                                            </DialogTrigger>
+                                            <DialogContent className="sm:max-w-3xl p-6">
+                                                <DialogHeader className="p-3">
+                                                    <DialogTitle>
+                                                        Site Credits
+                                                    </DialogTitle>
+                                                    <div className="w-full flex flex-col items-center">
+                                                        <Separator className="mt-3"/>
+                                                    </div>
+                                                    <DialogDescription className="mt-3">
+                                                        <span>
+                                                            Thanks to the following site developers and all lab members for contributions.
+                                                        </span>
+                                                        <ul className="mt-3 ml-6 space-y-3 list-outside list-disc">
+                                                            <li><a href="https://faikit.github.io/" target="_blank" className="animated-underline">Huijie Wang</a></li>
+                                                        </ul>
+                                                    </DialogDescription>
+                                                </DialogHeader>
+                                            </DialogContent>
+                                        </Dialog>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -193,7 +193,7 @@ export default function Home() {
                                                                     </CardContent>
                                                                     <CardFooter className="flex flex-row gap-3 flex-wrap">
                                                                         {publication.links.map((link) => (
-                                                                            <a href={link.url} target="_blank" className="hover:underline" key={link.website}>{link.website}</a>
+                                                                            <a href={link.url} target="_blank" className="animated-underline" key={link.website}>{link.website}</a>
                                                                         ))} 
                                                                     </CardFooter>
                                                                 </Card>
