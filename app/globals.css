@@ -120,7 +120,7 @@
     body {
         @apply bg-background text-foreground;
     }
-    a, Button, Link {
+    a, span, Button, Link {
         @apply transition delay-100 duration-200;
     }
 }

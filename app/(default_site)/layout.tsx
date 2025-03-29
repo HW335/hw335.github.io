@@ -145,7 +145,7 @@ export default function RootLayout({
                                         </h3>
                                         {footer.links.map((f) => (
                                             <div key={f.subtitle}>
-                                                <a key={f.subtitle} href={f.href} target={f.target} className="animated-underline select-none">
+                                                <a key={f.subtitle} href={f.href} target={f.target} className="hover:text-amber-400 select-none">
                                                     {f.subtitle}
                                                 </a>
                                             </div>
@@ -157,8 +157,8 @@ export default function RootLayout({
                                 <div className="w-full mt-20 flex flex-row flex-wrap gap-6 select-none">
 
                                     {/* to keep the same */}
-                                    <a href="https://x.com/" target="_blank" className="select-none hover:opacity-30">
-                                        <svg className="size-8 text-foreground" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <a href="https://x.com/" target="_blank" className="select-none hover:text-amber-400">
+                                        <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
                                         </svg>
                                     </a>
@@ -171,8 +171,8 @@ export default function RootLayout({
                             <div className="w-full max-w-7xl mt-20 flex gap-6 flex-wrap">
 
                                 {/* to keep the same */}
-                                <a href="https://x.com/" target="_blank" className="select-none hover:opacity-30">
-                                    <svg className="size-8 text-foreground" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <a href="https://x.com/" target="_blank" className="select-none hover:text-amber-400">
+                                    <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z"/>
                                     </svg>
                                 </a>
@@ -191,7 +191,7 @@ export default function RootLayout({
                                     <div>
                                         <Dialog>
                                             <DialogTrigger asChild>
-                                                <span className="animated-underline cursor-pointer select-none">Site Credits</span>
+                                                <span className="hover:text-amber-400 cursor-pointer select-none">Site Credits</span>
                                             </DialogTrigger>
                                             <DialogContent className="sm:max-w-3xl p-6">
                                                 <DialogHeader className="p-3">
