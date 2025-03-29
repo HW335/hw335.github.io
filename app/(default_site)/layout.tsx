@@ -97,12 +97,6 @@ export default function RootLayout({
 
                 {children}
 
-             
-
-                <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                    <Separator className="max-w-7xl mt-20"/>
-                </div>
-
 
 
                 <FadeIn>

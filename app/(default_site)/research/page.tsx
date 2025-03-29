@@ -7,6 +7,10 @@ export const metadata: Metadata = {
 
 
 
+import { Separator } from "@/components/ui/separator"
+
+
+
 import { FadeIn } from "@/components/animation/fade-in"
 
 
@@ -78,6 +82,12 @@ export default function Home() {
                     </div>
                 </div>
             </FadeIn>
+
+
+
+            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                <Separator className="max-w-7xl mt-20"/>
+            </div>
 
 
 
