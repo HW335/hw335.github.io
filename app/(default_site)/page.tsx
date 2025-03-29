@@ -40,14 +40,20 @@ export default function Home() {
             </div>
 
 
+
             <h2 className='p-6 lg:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl gap-3'>
                 <RollinggText1/>
                 <RollinggText2/>
                 <RollinggText3/>
             </h2>
+
+
+
+            <div>
+                
+            </div>
             
                 
-
 
         </main>
     );
