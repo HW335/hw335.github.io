@@ -41,19 +41,20 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex justify-center 2xl:justify-evenly">
 
 
-
+                
                 <div className="w-48 hidden 2xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
                         <a className="select-none flex items-center gap-3 group hover:text-amber-400" href="#teir1">
-                            <span className="border-l-4 border-l-foreground text-sm">&nbsp;</span>
-                            <span className="text-xl font-bold">Tire 1</span>
+                            <FadeIn><span className="border-l-4 border-l-foreground text-sm">&nbsp;</span></FadeIn>
+                            <FadeIn><span className="text-xl font-bold">Tire 1</span></FadeIn>
                         </a>
                         <a className="select-none flex items-center gap-3 group hover:text-amber-400" href="#teir2">
-                            <span className="border-l-4 border-l-foreground text-sm">&nbsp;</span>
-                            <span className="text-xl font-bold">Tire 2</span>
+                            <FadeIn><span className="border-l-4 border-l-foreground text-sm">&nbsp;</span></FadeIn>
+                            <FadeIn><span className="text-xl font-bold">Tire 2</span></FadeIn>
                         </a>
                     </div>
                 </div>
+                
 
 
 

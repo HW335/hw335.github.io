@@ -37,7 +37,7 @@ export default function Home() {
 
             {/* Landing */}
             <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
-                <div className="w-full max-w-7xl flex flex-col gap-6 select-none">
+                <div className="w-full max-w-7xl flex flex-col gap-6">
                     {/* <FadeIn>
                         <Image src="/logos/jc_stem_lab.png" width={200} height={200} alt="e"/>
                     </FadeIn> */}
