@@ -72,13 +72,13 @@ export default function RootLayout({
                 <header>
                     <ul className="fixed flex flex-row gap-3 m-6 z-20 flex-wrap">
                         {headers.map((header) => (
-                            <Button asChild key={header.title} className="bg-white text-soft-black hover:bg-amber-400">
+                            <Button asChild key={header.title} className="bg-background text-foreground hover:bg-amber-400">
                                 <Link href={header.href} className="select-none">{header.title}</Link>
                             </Button>
                         ))}
                     </ul>
                     <div className="fixed right-0 bottom-0 m-6 z-20">
-                        <a href="#" className="text-soft-black bg-white hover:bg-amber-400 rounded-full flex justify-center items-center p-2 select-none">
+                        <a href="#" className="bg-background text-foreground hover:bg-amber-400 rounded-full flex justify-center items-center p-2 select-none">
                             <span>
                                 <svg fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
