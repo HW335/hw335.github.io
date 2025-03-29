@@ -6,7 +6,6 @@ export const metadata: Metadata = {
 };
 
 
-import { Separator } from "@/components/ui/separator"
 import Image from 'next/image'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 
@@ -34,18 +33,13 @@ export default function Home() {
 
 
             <FadeIn>
-                <div className="w-full pl-6 pr-6 pt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
-                    <div className="flex-1/3">
-                        <AspectRatio ratio={1/1}>
-                            <Image
-                                src="/logos/jc_stem_lab.png"
-                                alt="img"
-                                fill
-                                className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
-                            />
-                        </AspectRatio>
+                <div className="w-full flex flex-col lg:flex-row">
+                    <div className="flex-1/3 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500">
+                        <h2 className="p-6 lg:p-20 min-h-64 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
+                            Embodied AI
+                        </h2>
                     </div>
-                    <div className="flex-2/3 flex flex-col gap-6">
+                    <div className="flex-2/3 flex flex-col p-6 pt-10 pb-10 lg:p-20">
                         <h1 className="text-xl font-bold">
                             AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
                         </h1>
@@ -64,25 +58,14 @@ export default function Home() {
 
 
 
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                <Separator className="max-w-7xl mt-20"/>
-            </div>
-
-
-
             <FadeIn>
-                <div className="w-full pl-6 pr-6 pt-20 flex flex-col gap-10 md:flex-row-reverse md:gap-20 justify-between">
-                    <div className="flex-1/3">
-                        <AspectRatio ratio={1/1}>
-                            <Image
-                                src="/logos/jc_stem_lab.png"
-                                alt="img"
-                                fill
-                                className="h-full w-full rounded-md object-cover bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500"
-                            />
-                        </AspectRatio>
+                <div className="w-full flex flex-col lg:flex-row-reverse">
+                    <div className="flex-1/3 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500">
+                        <h2 className="p-6 lg:p-20 min-h-64 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
+                            Embodied AI
+                        </h2>
                     </div>
-                    <div className="flex-2/3 flex flex-col gap-6">
+                    <div className="flex-2/3 flex flex-col p-6 pt-10 pb-10 lg:p-20">
                         <h1 className="text-xl font-bold">
                             AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
                         </h1>
