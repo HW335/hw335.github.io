@@ -181,9 +181,9 @@ export default function Home() {
                                             <TabsContent value={c2} key={c2} className="mt-6">
                                                 <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-6">
                                                     {[...publications.values()].filter(publication => publication.keys.includes(c2)).map(( publication) => (
-                                                        <FadeIn>
+                                                        <FadeIn key={publication.title}>
                                                             <div>
-                                                                <Card className="border-border" key={publication.title}>
+                                                                <Card className="border-border">
                                                                     <CardHeader>
                                                                         <CardTitle className="text-xl">{publication.title}</CardTitle>
                                                                         <CardDescription>{publication.authors}</CardDescription>
