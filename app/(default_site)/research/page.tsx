@@ -36,7 +36,7 @@ export default function Home() {
             <FadeIn>
                 <div className="w-full flex flex-col lg:flex-row pt-32" id="embodied">
                     <div className="flex-2/5 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500">
-                        <h2 className="p-6 lg:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
+                        <h2 className="p-6 lg:p-20 min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
                             Embodied AI
                         </h2>
                     </div>
@@ -62,7 +62,7 @@ export default function Home() {
             <FadeIn>
                 <div className="w-full flex flex-col lg:flex-row-reverse pt-32" id="ad">
                     <div className="flex-2/5 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500">
-                        <h2 className="p-6 lg:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
+                        <h2 className="p-6 lg:p-20 min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
                             Autonomous Driving
                         </h2>
                     </div>
