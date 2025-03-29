@@ -36,7 +36,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500 bg-fixed">
+            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
                 <div className="w-full max-w-7xl flex flex-col gap-6 select-none">
                     {/* <FadeIn>
                         <Image src="/logos/jc_stem_lab.png" width={200} height={200} alt="e"/>
@@ -53,7 +53,7 @@ export default function Home() {
 
 
             
-            <h2 className='p-6 pt-10 pb-10 md:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl gap-3 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500'>
+            <h2 className='p-6 pt-10 pb-10 md:p-20 min-h-64 lg:min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl gap-3 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]'>
                 <FadeIn><RollinggText1/></FadeIn>
                 <FadeIn><RollinggText2/></FadeIn>
                 <FadeIn><RollinggText3/></FadeIn>
@@ -143,8 +143,8 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="w-full flex flex-col xl:flex-row-reverse">
-                    <div className="flex-1/3 bg-[url(/background/mmlab@cuhk.jpg)] min-h-96 bg-center bg-cover"></div>
-                    <div className="flex-2/3">
+                    <div className="flex-2/5 bg-[url(/background/mmlab@cuhk.jpg)] min-h-96 bg-center bg-cover"></div>
+                    <div className="flex-3/5">
                         <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#652371]">
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#e59c2e] mb-6">
                                 <FadeIn>MMLab @ CHUK</FadeIn>
@@ -162,8 +162,8 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="w-full flex flex-col xl:flex-row">
-                    <div className="flex-1/3 bg-[url(/background/mmlab@ntu.jpg)] min-h-96 bg-center bg-cover"></div>
-                    <div className="flex-2/3">
+                    <div className="flex-2/5 bg-[url(/background/mmlab@ntu.jpg)] min-h-96 bg-center bg-cover"></div>
+                    <div className="flex-3/5">
                         <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#181C62]">
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#D71440] mb-6">
                                 <FadeIn>MMLab @ NTU</FadeIn>
