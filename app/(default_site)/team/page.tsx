@@ -81,7 +81,7 @@ export default function Home() {
                                                 src={member.img}
                                                 alt={member.name}
                                                 fill
-                                                className="h-full w-full rounded-md object-cover bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"
+                                                className="h-full w-full rounded-md object-cover loading"
                                             />
                                         </AspectRatio>
                                         <span className="font-bold text-xl">{member.name}</span>
@@ -121,7 +121,7 @@ export default function Home() {
                                                 src={member.img}
                                                 alt={member.name}
                                                 fill
-                                                className="h-full w-full rounded-md object-cover bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"
+                                                className="h-full w-full rounded-md object-cover loading"
                                             />
                                         </AspectRatio>
                                         <span className="font-bold text-xl">{member.name}</span>

@@ -128,7 +128,7 @@ export default function Home() {
                         src="/background/mmlab@hku.jpg"
                         alt="mmlab@hku"
                         fill
-                        className="object-cover object-center"
+                        className="object-cover object-center loading"
                     />
                 </div>
                 <div className="flex-3/5">
@@ -155,7 +155,7 @@ export default function Home() {
                         src="/background/mmlab@cuhk.jpg"
                         alt="mmlab@cuhk"
                         fill
-                        className="object-cover object-center"
+                        className="object-cover object-center loading"
                     />
                 </div>
                 <div className="flex-3/5">
@@ -185,7 +185,7 @@ export default function Home() {
                         src="/background/mmlab@ntu.jpg"
                         alt="mmlab@ntu"
                         fill
-                        className="object-cover object-center"
+                        className="object-cover object-center loading"
                     />
                 </div>
                 <div className="flex-3/5">

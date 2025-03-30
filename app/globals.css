@@ -128,8 +128,11 @@
     border-bottom: 1px solid transparent;
     @apply transition delay-100 duration-200;
 }
-.animated-underline:hover{
-    @apply border-b-inherit
+.animated-underline:hover {
+    @apply border-b-inherit;
+}
+.loading {
+    @apply bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440];
 }
 
 
