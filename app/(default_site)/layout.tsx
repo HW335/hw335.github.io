@@ -34,9 +34,10 @@ const inter = Inter({
 
 
 // footer
-const footers: { title: string; links: { subtitle: string; href: string; target: string; }[];}[] = [
+const footers: { title: string; href: string; links: { subtitle: string; href: string; target: string; }[];}[] = [
     {
         title: "Research",
+        href: "/research",
         links: [
             {
                 subtitle: "Embodied AI",
@@ -52,6 +53,7 @@ const footers: { title: string; links: { subtitle: string; href: string; target:
     },
     {
         title: "Publication",
+        href: "/publication",
         links: [
             {
                 subtitle: "Selected Works",
@@ -67,6 +69,7 @@ const footers: { title: string; links: { subtitle: string; href: string; target:
     },
     {
         title: "Team",
+        href: "/team",
         links: [
             {
                 subtitle: "Team",
@@ -77,6 +80,7 @@ const footers: { title: string; links: { subtitle: string; href: string; target:
     },
     {
         title: "MMLab",
+        href: "/",
         links: [
             {
                 subtitle: "@ HKU",
@@ -127,26 +131,26 @@ export default function RootLayout({
                     <footer className="w-full mb-20 flex flex-col gab-10">
                         <div className="w-full pl-6 pr-6 flex flex-col items-center 3xl:hidden">
                             <div className="w-full max-w-7xl mt-20 flex gap-10 items-center">
-                                <span className="font-bold text-3xl select-none">
+                                <Link href="/" className="font-bold text-3xl select-none hover:text-amber-400">
                                     Multimedia Laboratory
-                                </span>
+                                </Link>
                             </div>
                         </div>
                         {/* full width */}
                         <div className="w-full pl-6 pr-6 flex justify-center 3xl:justify-evenly">
                             <div className="w-48 hidden 3xl:block overflow-hidden">
                                 <div className="w-full mt-20 flex flex-col gap-3">
-                                    <span className="font-bold text-3xl select-none">
+                                    <Link href="/" className="font-bold text-3xl select-none hover:text-amber-400">
                                         MMLab
-                                    </span>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 lg:grid-cols-4">
                                 {footers.map((footer) => (
                                     <div key={footer.title} className="flex flex-col gap-3">
-                                        <h3 className="font-bold text-xl mb-3 select-none">
+                                        <Link href={footer.href} className="font-bold text-xl mb-3 select-none hover:text-amber-400">
                                             {footer.title}
-                                        </h3>
+                                        </Link>
                                         {footer.links.map((f) => (
                                             <div key={f.subtitle}>
                                                 <Link key={f.subtitle} href={f.href} target={f.target} className="hover:text-amber-400 select-none">
