@@ -2,7 +2,16 @@ import type { Metadata } from "next";
 import * as React from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-
+import {
+    Sheet,
+    SheetClose,
+    SheetContent,
+    SheetDescription,
+    SheetFooter,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+} from "@/components/ui/sheet"
 
 
 import "./globals.css";
@@ -70,13 +79,31 @@ export default function RootLayout({
 
 
                 <header>
-                    <ul className="fixed flex flex-row gap-3 m-6 z-20 flex-wrap">
+                    <div className="fixed flex flex-row gap-3 m-6 z-20 flex-wrap">
+{/* 
                         {headers.map((header) => (
                             <Button asChild key={header.title} className="bg-background text-foreground hover:bg-amber-400">
                                 <Link href={header.href} className="select-none">{header.title}</Link>
                             </Button>
                         ))}
-                    </ul>
+                         */}
+                        <Sheet>
+                            <SheetTrigger asChild>
+                                <Button asChild key={headers[0].title} className="bg-background text-foreground hover:bg-amber-400">
+                                    <Link href={headers[0].href} className="select-none">{headers[0].title}</Link>
+                                </Button>
+                            </SheetTrigger>
+                            <SheetContent side="left">
+                                <div className="fixed flex flex-col gap-3 m-6">
+                                    {headers.map((header) => (
+                                        <Button asChild key={header.title} className="bg-background text-foreground hover:bg-amber-400">
+                                            <Link href={header.href} className="select-none">{header.title}</Link>
+                                        </Button>
+                                    ))}
+                                </div>
+                            </SheetContent>
+                        </Sheet>
+                    </div>
                     <div className="fixed right-0 bottom-0 m-6 z-20">
                         <a href="#" className="bg-background text-foreground hover:bg-amber-400 rounded-full flex justify-center items-center p-2 select-none">
                             <span>
