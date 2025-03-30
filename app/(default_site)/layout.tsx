@@ -194,11 +194,11 @@ export default function RootLayout({
                                                 <span className="hover:text-amber-400 cursor-pointer select-none">Site Credits</span>
                                             </DialogTrigger>
                                             <DialogContent className="sm:max-w-3xl p-6">
-                                                <DialogHeader className="p-3">
+                                                <DialogHeader className="p-3 text-left">
                                                     <DialogTitle>
                                                         Site Credits
                                                     </DialogTitle>
-                                                    <div className="w-full flex flex-col items-center">
+                                                    <div className="w-full flex flex-col">
                                                         <Separator className="mt-3"/>
                                                     </div>
                                                     <DialogDescription className="mt-3">
