@@ -86,7 +86,7 @@ export default function RootLayout({
                         <Sheet>
                             <SheetTrigger asChild>
                                 <Button asChild key={headers[0].title} className="bg-background text-foreground hover:bg-amber-400 md:hidden">
-                                    <Link href={headers[0].href} className="select-none">{headers[0].title}</Link>
+                                    <Button className="select- hover:cursor-pointer">{headers[0].title}</Button>
                                 </Button>
                             </SheetTrigger>
                             <SheetContent side="left">
