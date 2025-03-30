@@ -128,7 +128,7 @@ export default function RootLayout({
                         <div className="w-full pl-6 pr-6 flex flex-col items-center 3xl:hidden">
                             <div className="w-full max-w-7xl mt-20 flex gap-10 items-center">
                                 <span className="font-bold text-3xl select-none">
-                                    MMLab | Multimedia Laboratory
+                                    Multimedia Laboratory
                                 </span>
                             </div>
                         </div>
