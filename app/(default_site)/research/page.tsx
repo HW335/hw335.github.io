@@ -23,7 +23,7 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500 bg-fixed">
+            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
                 <div className="w-full max-w-7xl flex flex-row justify-start">
                     <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
                         <FadeIn>Research</FadeIn>
@@ -35,7 +35,7 @@ export default function Home() {
 
             <FadeIn>
                 <div className="w-full flex flex-col lg:flex-row pt-32" id="embodied">
-                    <div className="flex-2/5 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500">
+                    <div className="flex-2/5 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]">
                         <h2 className="p-6 lg:p-20 min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
                             Embodied AI
                         </h2>
@@ -61,7 +61,7 @@ export default function Home() {
 
             <FadeIn>
                 <div className="w-full flex flex-col lg:flex-row-reverse pt-32" id="ad">
-                    <div className="flex-2/5 bg-gradient-to-br from-indigo-300 via-yellow-400 to-pink-500">
+                    <div className="flex-2/5 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]">
                         <h2 className="p-6 lg:p-20 min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
                             Autonomous Driving
                         </h2>
