@@ -16,6 +16,7 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import Image from 'next/image'
 
 
 
@@ -121,77 +122,98 @@ export default function Home() {
 
 
             
-                <div className="w-full flex flex-col xl:flex-row">
-                    <div className="flex-2/5 bg-[url(/background/mmlab@hku.jpg)] min-h-96 bg-center bg-cover"></div>
-                    <div className="flex-3/5">
-                        <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#25520d]">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#b5a774] mb-6">
-                                <FadeIn>MMLab @ HKU</FadeIn>
-                            </h1>
-                            <FadeIn>
-                                <p className="text-white">
-                                    x fdsafvea rea asveracv wacv weWe explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets.
-                                </p>
-                            </FadeIn>
-                            <FadeIn>
-                                <p className="text-white">
-                                    Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios. 
-                                </p>
-                            </FadeIn>
+            <div className="w-full flex flex-col xl:flex-row">
+                <div className="flex-2/5 min-h-96 relative">
+                    <Image
+                        src="/background/mmlab@hku.jpg"
+                        alt="mmlab@hku"
+                        fill
+                        className="object-cover object-center"
+                    />
+                </div>
+                <div className="flex-3/5">
+                    <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#25520d]">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#b5a774] mb-6">
+                            <FadeIn>MMLab @ HKU</FadeIn>
+                        </h1>
+                        <FadeIn>
+                            <p className="text-white">
+                                x fdsafvea rea asveracv wacv weWe explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets.
+                            </p>
+                        </FadeIn>
+                        <FadeIn>
+                            <p className="text-white">
+                                Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios. 
+                            </p>
+                        </FadeIn>
+                    </div>
+                </div>
+            </div>
+            <div className="w-full flex flex-col xl:flex-row-reverse">
+                <div className="flex-2/5 min-h-96 relative">
+                    <Image
+                        src="/background/mmlab@cuhk.jpg"
+                        alt="mmlab@cuhk"
+                        fill
+                        className="object-cover object-center"
+                    />
+                </div>
+                <div className="flex-3/5">
+                    <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#652371]">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#e59c2e] mb-6">
+                            <FadeIn>MMLab @ CHUK</FadeIn>
+                        </h1>
+                        <FadeIn>
+                            <p className="text-white">
+                                The CUHK Multimedia Lab (MMLab) is one of the pioneering institutes on deep learning. In GPU Technology Conference (GTC) 2016, a world-wide technology summit, our lab is recognized as one of the top ten AI pioneers, and listed together with top research groups in the world (e.g. MIT, Stanford, Berkeley, and Univ. of Toronto). Today, we remain one of the most active research labs in computer vision and deep learning, publishing over 40 papers on top conferences (CVPR/ICCV/ECCV/NIPS) every year.
+                            </p>
+                        </FadeIn>
+                        <FadeIn>
+                            <p className="text-white">
+                                Our lab has a large group of talented students, plenty of computational resources, and steady financial support, and free research environment.
+                            </p>
+                        </FadeIn>
+                        <div className="flex justify-end mt-6">
+                            <FadeIn><Link href="https://mmlab.ie.cuhk.edu.hk/" target="_blank" className="text-[#e59c2e] animated-underline">More</Link></FadeIn>
                         </div>
                     </div>
                 </div>
-                <div className="w-full flex flex-col xl:flex-row-reverse">
-                    <div className="flex-2/5 bg-[url(/background/mmlab@cuhk.jpg)] min-h-96 bg-center bg-cover"></div>
-                    <div className="flex-3/5">
-                        <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#652371]">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#e59c2e] mb-6">
-                                <FadeIn>MMLab @ CHUK</FadeIn>
-                            </h1>
-                            <FadeIn>
-                                <p className="text-white">
-                                    The CUHK Multimedia Lab (MMLab) is one of the pioneering institutes on deep learning. In GPU Technology Conference (GTC) 2016, a world-wide technology summit, our lab is recognized as one of the top ten AI pioneers, and listed together with top research groups in the world (e.g. MIT, Stanford, Berkeley, and Univ. of Toronto). Today, we remain one of the most active research labs in computer vision and deep learning, publishing over 40 papers on top conferences (CVPR/ICCV/ECCV/NIPS) every year.
-                                </p>
-                            </FadeIn>
-                            <FadeIn>
-                                <p className="text-white">
-                                    Our lab has a large group of talented students, plenty of computational resources, and steady financial support, and free research environment.
-                                </p>
-                            </FadeIn>
-                            <div className="flex justify-end mt-6">
-                                <FadeIn><Link href="https://mmlab.ie.cuhk.edu.hk/" target="_blank" className="text-[#e59c2e] animated-underline">More</Link></FadeIn>
-                            </div>
+            </div>
+            <div className="w-full flex flex-col xl:flex-row">
+                <div className="flex-2/5 min-h-96 relative">
+                    <Image
+                        src="/background/mmlab@ntu.jpg"
+                        alt="mmlab@ntu"
+                        fill
+                        className="object-cover object-center"
+                    />
+                </div>
+                <div className="flex-3/5">
+                    <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#181C62]">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#D71440] mb-6">
+                            <FadeIn>MMLab @ NTU</FadeIn>
+                        </h1>
+                        <FadeIn>
+                            <p className="text-white">
+                                MMLab@NTU was formed on the 1 August 2018, with a research focus on computer vision and deep learning. It is now a group with three faculty members and more than 40 members including research fellows, research assistants, research engineers and PhD students.
+                            </p>
+                        </FadeIn>
+                        <FadeIn>
+                            <p className="text-white">
+                                Members in MMLab@NTU conduct research primarily in low-level vision, image and video understanding, and generative AI. Have a look at the overview of <Link href="https://www.mmlab-ntu.com/research.html" target="_blank" className="text-[#D71440] animated-underline">our research</Link>. All publications are listed <Link href="https://www.mmlab-ntu.com/publication_topic.html" target="_blank" className="text-[#D71440] animated-underline">here</Link>. 
+                            </p>
+                        </FadeIn>
+                        <FadeIn>
+                            <p className="text-white">
+                                We are always looking for motivated PhD students, postdocs, research assistants who have the same interests like us. Check out the <Link href="https://www.mmlab-ntu.com/careers.html" target="_blank" className="text-[#D71440] animated-underline">careers</Link> page and follow us on <Link href="https://twitter.com/MMLabNTU" target="_blank" className="text-[#D71440] animated-underline">Twitter</Link>.
+                            </p>
+                        </FadeIn>
+                        <div className="flex justify-end mt-6">
+                            <FadeIn><Link href="https://www.mmlab-ntu.com/" target="_blank" className="text-[#D71440] animated-underline">More</Link></FadeIn>
                         </div>
                     </div>
                 </div>
-                <div className="w-full flex flex-col xl:flex-row">
-                    <div className="flex-2/5 bg-[url(/background/mmlab@ntu.jpg)] min-h-96 bg-center bg-cover"></div>
-                    <div className="flex-3/5">
-                        <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#181C62]">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#D71440] mb-6">
-                                <FadeIn>MMLab @ NTU</FadeIn>
-                            </h1>
-                            <FadeIn>
-                                <p className="text-white">
-                                    MMLab@NTU was formed on the 1 August 2018, with a research focus on computer vision and deep learning. It is now a group with three faculty members and more than 40 members including research fellows, research assistants, research engineers and PhD students.
-                                </p>
-                            </FadeIn>
-                            <FadeIn>
-                                <p className="text-white">
-                                    Members in MMLab@NTU conduct research primarily in low-level vision, image and video understanding, and generative AI. Have a look at the overview of <Link href="https://www.mmlab-ntu.com/research.html" target="_blank" className="text-[#D71440] animated-underline">our research</Link>. All publications are listed <Link href="https://www.mmlab-ntu.com/publication_topic.html" target="_blank" className="text-[#D71440] animated-underline">here</Link>. 
-                                </p>
-                            </FadeIn>
-                            <FadeIn>
-                                <p className="text-white">
-                                    We are always looking for motivated PhD students, postdocs, research assistants who have the same interests like us. Check out the <Link href="https://www.mmlab-ntu.com/careers.html" target="_blank" className="text-[#D71440] animated-underline">careers</Link> page and follow us on <Link href="https://twitter.com/MMLabNTU" target="_blank" className="text-[#D71440] animated-underline">Twitter</Link>.
-                                </p>
-                            </FadeIn>
-                            <div className="flex justify-end mt-6">
-                                <FadeIn><Link href="https://www.mmlab-ntu.com/" target="_blank" className="text-[#D71440] animated-underline">More</Link></FadeIn>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
             
                 
 
