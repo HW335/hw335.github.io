@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 
 
 
+import Link from "next/link"
 import {
     Card,
     CardContent,
@@ -87,7 +88,7 @@ export default function Home() {
                                             <p className="text-white">{item.detail}</p>
                                         </CardContent>
                                         <CardFooter className="text-white flex justify-end">
-                                            <a href={item.link} target="_blank" className="animated-underline">More</a>
+                                            <Link href={item.link} target="_blank" className="animated-underline">More</Link>
                                         </CardFooter>
                                     </Card>
                                 </div>
@@ -107,7 +108,7 @@ export default function Home() {
                                             <p className="text-white">{item.detail}</p>
                                         </CardContent>
                                         <CardFooter className="text-white flex justify-end">
-                                            <a href={item.link} target="_blank" className="animated-underline">More</a>
+                                            <Link href={item.link} target="_blank" className="animated-underline">More</Link>
                                         </CardFooter>
                                     </Card>
                                 </div>
@@ -158,7 +159,7 @@ export default function Home() {
                                 </p>
                             </FadeIn>
                             <div className="flex justify-end mt-6">
-                                <FadeIn><a href="https://mmlab.ie.cuhk.edu.hk/" target="_blank" className="text-[#e59c2e] animated-underline">More</a></FadeIn>
+                                <FadeIn><Link href="https://mmlab.ie.cuhk.edu.hk/" target="_blank" className="text-[#e59c2e] animated-underline">More</Link></FadeIn>
                             </div>
                         </div>
                     </div>
@@ -177,16 +178,16 @@ export default function Home() {
                             </FadeIn>
                             <FadeIn>
                                 <p className="text-white">
-                                    Members in MMLab@NTU conduct research primarily in low-level vision, image and video understanding, and generative AI. Have a look at the overview of <a href="https://www.mmlab-ntu.com/research.html" target="_blank" className="text-[#D71440] animated-underline">our research</a>. All publications are listed <a href="https://www.mmlab-ntu.com/publication_topic.html" target="_blank" className="text-[#D71440] animated-underline">here</a>. 
+                                    Members in MMLab@NTU conduct research primarily in low-level vision, image and video understanding, and generative AI. Have a look at the overview of <Link href="https://www.mmlab-ntu.com/research.html" target="_blank" className="text-[#D71440] animated-underline">our research</Link>. All publications are listed <Link href="https://www.mmlab-ntu.com/publication_topic.html" target="_blank" className="text-[#D71440] animated-underline">here</Link>. 
                                 </p>
                             </FadeIn>
                             <FadeIn>
                                 <p className="text-white">
-                                    We are always looking for motivated PhD students, postdocs, research assistants who have the same interests like us. Check out the <a href="https://www.mmlab-ntu.com/careers.html" target="_blank" className="text-[#D71440] animated-underline">careers</a> page and follow us on <a href="https://twitter.com/MMLabNTU" target="_blank" className="text-[#D71440] animated-underline">Twitter</a>.
+                                    We are always looking for motivated PhD students, postdocs, research assistants who have the same interests like us. Check out the <Link href="https://www.mmlab-ntu.com/careers.html" target="_blank" className="text-[#D71440] animated-underline">careers</Link> page and follow us on <Link href="https://twitter.com/MMLabNTU" target="_blank" className="text-[#D71440] animated-underline">Twitter</Link>.
                                 </p>
                             </FadeIn>
                             <div className="flex justify-end mt-6">
-                                <FadeIn><a href="https://www.mmlab-ntu.com/" target="_blank" className="text-[#D71440] animated-underline">More</a></FadeIn>
+                                <FadeIn><Link href="https://www.mmlab-ntu.com/" target="_blank" className="text-[#D71440] animated-underline">More</Link></FadeIn>
                             </div>
                         </div>
                     </div>

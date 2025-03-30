@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 import Image from 'next/image'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
 
 
 
@@ -44,14 +45,14 @@ export default function Home() {
                 
                 <div className="w-48 hidden 2xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        <a className="select-none flex items-center gap-3 group hover:text-amber-400" href="#teir1">
+                        <Link className="select-none flex items-center gap-3 group hover:text-amber-400" href="#teir1">
                             <FadeIn><span className="border-l-4 border-l-foreground text-sm">&nbsp;</span></FadeIn>
                             <FadeIn><span className="text-xl font-bold">Tire 1</span></FadeIn>
-                        </a>
-                        <a className="select-none flex items-center gap-3 group hover:text-amber-400" href="#teir2">
+                        </Link>
+                        <Link className="select-none flex items-center gap-3 group hover:text-amber-400" href="#teir2">
                             <FadeIn><span className="border-l-4 border-l-foreground text-sm">&nbsp;</span></FadeIn>
                             <FadeIn><span className="text-xl font-bold">Tire 2</span></FadeIn>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 
@@ -62,7 +63,7 @@ export default function Home() {
                     <FadeIn>
                         <div className="w-full flex flex-col items-center">
                             <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
-                                <a href="#teir1" className="scroll-mt-20 group flex items-center" id="teir1">
+                                <Link href="#teir1" className="scroll-mt-20 group flex items-center" id="teir1">
                                     Tier 1
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -70,7 +71,7 @@ export default function Home() {
                                             <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
                                         </svg>
                                     </span> 
-                                </a>
+                                </Link>
                             </h2>
                             <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
                                 {members.map((member) => (
@@ -102,7 +103,7 @@ export default function Home() {
                     <FadeIn>
                         <div className="w-full flex flex-col items-center">
                             <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
-                                <a href="#teir2" className="scroll-mt-20 group flex items-center" id="teir2">
+                                <Link href="#teir2" className="scroll-mt-20 group flex items-center" id="teir2">
                                     Tier 2
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -110,7 +111,7 @@ export default function Home() {
                                             <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
                                         </svg>
                                     </span>                        
-                                </a>
+                                </Link>
                             </h2>
                             <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
                                 {members.map((member) => (

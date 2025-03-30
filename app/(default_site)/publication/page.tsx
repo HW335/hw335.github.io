@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 
 
 
+import Link from "next/link"
 import { Separator } from "@/components/ui/separator"
 import {
     Tabs,
@@ -56,7 +57,7 @@ export default function Home() {
                 
                 <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                     <FadeIn>
-                        <a href="#selected" className="scroll-mt-20 group flex items-center" id="selected">
+                        <Link href="#selected" className="scroll-mt-20 group flex items-center" id="selected">
                             Selected Works
                             <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -64,7 +65,7 @@ export default function Home() {
                                     <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
                                 </svg>
                             </span> 
-                        </a>
+                        </Link>
                     </FadeIn>
                 </h2>
                 
@@ -147,7 +148,7 @@ export default function Home() {
                 <div className="w-full pl-6 pr-6 flex flex-col items-center">
                     
                     <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
-                        <a href="#gallery" className="scroll-mt-20 group flex items-center" id="gallery">
+                        <Link href="#gallery" className="scroll-mt-20 group flex items-center" id="gallery">
                             Gallery
                             <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -155,7 +156,7 @@ export default function Home() {
                                     <path d="M13.9536 10C15.4596 11.5118 15.3239 14.0991 13.6506 15.7789L11.2268 18.2121L8.80299 20.6454C7.12969 22.3252 4.55237 22.4613 3.0464 20.9495C1.54043 19.4377 1.67609 16.8504 3.34939 15.1706L5.77323 12.7373" strokeWidth="2.5" strokeLinecap="round"/>
                                 </svg>
                             </span> 
-                        </a>
+                        </Link>
                     </h2>
 
 
@@ -193,7 +194,7 @@ export default function Home() {
                                                                     </CardContent>
                                                                     <CardFooter className="flex flex-row gap-3 flex-wrap">
                                                                         {publication.links.map((link) => (
-                                                                            <a href={link.url} target="_blank" className="animated-underline" key={link.website}>{link.website}</a>
+                                                                            <Link href={link.url} target="_blank" className="animated-underline" key={link.website}>{link.website}</Link>
                                                                         ))} 
                                                                     </CardFooter>
                                                                 </Card>
