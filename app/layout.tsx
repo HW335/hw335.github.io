@@ -11,7 +11,7 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/components/ui/homesheet"
 
 
 import "./globals.css";
@@ -80,24 +80,30 @@ export default function RootLayout({
 
                 <header>
                     <div className="fixed flex flex-row gap-3 m-6 z-20 flex-wrap">
-{/* 
                         {headers.map((header) => (
-                            <Button asChild key={header.title} className="bg-background text-foreground hover:bg-amber-400">
+                            <Button asChild key={header.title} className="bg-background text-foreground hover:bg-amber-400 hidden md:block">
                                 <Link href={header.href} className="select-none">{header.title}</Link>
                             </Button>
                         ))}
-                         */}
                         <Sheet>
                             <SheetTrigger asChild>
-                                <Button asChild key={headers[0].title} className="bg-background text-foreground hover:bg-amber-400">
+                                <Button asChild key={headers[0].title} className="bg-background text-foreground hover:bg-amber-400 md:hidden">
                                     <Link href={headers[0].href} className="select-none">{headers[0].title}</Link>
                                 </Button>
                             </SheetTrigger>
                             <SheetContent side="left">
+                                <SheetHeader>
+                                    <SheetTitle className="hidden">hidden</SheetTitle>
+                                    <SheetDescription className="hidden">
+                                    hidden
+                                    </SheetDescription>
+                                </SheetHeader>
                                 <div className="fixed flex flex-col gap-3 m-6">
                                     {headers.map((header) => (
                                         <Button asChild key={header.title} className="bg-background text-foreground hover:bg-amber-400">
-                                            <Link href={header.href} className="select-none">{header.title}</Link>
+                                            <Link href={header.href} className="select-none">
+                                                <div className="w-full flex justify-start">{header.title}</div>
+                                            </Link> 
                                         </Button>
                                     ))}
                                 </div>
