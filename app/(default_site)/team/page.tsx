@@ -60,7 +60,7 @@ export default function Home() {
 
                 <div className="w-full max-w-7xl">
                     <FadeIn>
-                        <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                        <div className="w-full flex flex-col items-center">
                             <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                                 <a href="#teir1" className="scroll-mt-20 group flex items-center" id="teir1">
                                     Tier 1
@@ -93,14 +93,14 @@ export default function Home() {
 
 
 
-                    <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                    <div className="w-full flex flex-col items-center">
                         <Separator className="max-w-7xl mt-20"/>
                     </div>
                     
 
 
                     <FadeIn>
-                        <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                        <div className="w-full flex flex-col items-center">
                             <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
                                 <a href="#teir2" className="scroll-mt-20 group flex items-center" id="teir2">
                                     Tier 2
