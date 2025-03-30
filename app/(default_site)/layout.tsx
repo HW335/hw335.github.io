@@ -80,18 +80,18 @@ const footers: { title: string; links: { subtitle: string; href: string; target:
         links: [
             {
                 subtitle: "@ HKU",
-                href: "/",
+                href: "/#MMLab@HKU",
                 target: "_self",
             },
             {
                 subtitle: "@ CUHK",
-                href: "https://mmlab.ie.cuhk.edu.hk/",
-                target: "_blank",
+                href: "/#MMLab@CUHK",
+                target: "_self",
             },
             {
                 subtitle: "@ NTU",
-                href: "https://www.mmlab-ntu.com/",
-                target: "_blank",
+                href: "/#MMLab@NTU",
+                target: "_self",
             },
         ],
     },
