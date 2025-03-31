@@ -231,7 +231,7 @@ export default function RootLayout({
                                             <DialogTrigger asChild>
                                                 <span className="hover:text-amber-400 cursor-pointer select-none">Site Credits</span>
                                             </DialogTrigger>
-                                            <DialogContent className="sm:max-w-3xl p-6">
+                                            <DialogContent className="sm:max-w-3xl p-6 border-0">
                                                 <DialogHeader className="p-3 text-left">
                                                     <DialogTitle>
                                                         Site Credits
@@ -243,9 +243,9 @@ export default function RootLayout({
                                                         <span>
                                                             Thanks to the following site developers and all lab members for contributions.
                                                         </span>
-                                                        <ul className="mt-3 ml-6 space-y-3 list-outside list-disc">
-                                                            <li><Link href="https://faikit.github.io/" target="_blank" className="animated-underline">Huijie Wang</Link></li>
-                                                        </ul>
+                                                            <li className="mt-3 space-y-3 list-outside list-disc">
+                                                                <Link href="https://faikit.github.io/" target="_blank" className="animated-underline">Huijie Wang</Link>
+                                                            </li>
                                                     </DialogDescription>
                                                 </DialogHeader>
                                             </DialogContent>
