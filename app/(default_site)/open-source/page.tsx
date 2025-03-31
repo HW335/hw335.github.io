@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-    title: "Publication | MMLab",
+    title: "Open Source | MMLab",
     description: "Multimedia Laboratory",
-    keywords: ["Publication", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
+    keywords: ["Open Source", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
 };
 
 
@@ -70,7 +70,7 @@ export default function Home() {
                                 </BreadcrumbSeparator>
                                 <BreadcrumbItem>
                                     <BreadcrumbLink asChild>
-                                        <Link href="/research#publication" className="text-white animated-underline hover:text-white">Publication</Link>
+                                        <Link href="/research#open-source" className="text-white animated-underline hover:text-white">Open Source</Link>
                                     </BreadcrumbLink>
                                 </BreadcrumbItem>
                                 <BreadcrumbSeparator>
@@ -80,7 +80,7 @@ export default function Home() {
                         </Breadcrumb>
                     </FadeIn>
                     <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
-                        <FadeIn>Publications</FadeIn>
+                        <FadeIn>Projects & Datasets</FadeIn>
                     </h1>
                 </div>
             </div>

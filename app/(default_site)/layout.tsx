@@ -45,23 +45,18 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
                 target: "_self",
             },
             {
-                subtitle: "Project",
-                href: "/project",
-                target: "_self",
-            },
-            {
-                subtitle: "Dataset [todo]",
-                href: "/dataset",
-                target: "_self",
-            },
-            {
                 subtitle: "Publication",
                 href: "/research#publication",
                 target: "_self",
+            },            
+            {
+                subtitle: "Open Source",
+                href: "/research#open-source",
+                target: "_self",
             },
             {
-                subtitle: "Event [todo]",
-                href: "/event",
+                subtitle: "Event",
+                href: "/research#event",
                 target: "_self",
             },
         ],
@@ -70,11 +65,6 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
         title: "About [todo]",
         href: "/about",
         links: [
-            {
-                subtitle: "Vision [todo]",
-                href: "/vision",
-                target: "_self",
-            },
             {
                 subtitle: "News [todo]",
                 href: "/news",
