@@ -4,6 +4,11 @@
 - Tailwind CSS -> shadcn
 - Typescript
 
+# Note
+- use ```<Link>``` instead of ```<a>```
+- use ```<Image>``` instead of ```<img>```
+- use ```<div><Image></div>``` instead of ```<div className='background-image'></div>```
+
 # Setup
 - install ```npm```
 - ```npm install``` to install or update all dependencies
