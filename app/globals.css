@@ -117,9 +117,9 @@
 
 
 @layer base {
-    html {
+    /* html {
         @apply scroll-smooth;
-    }
+    } */
     body {
         @apply bg-background text-foreground;
     }
@@ -137,7 +137,12 @@
 .loading {
     @apply bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440];
 }
-
+.color-text-1 {
+    width: fit-content;
+    background-image: linear-gradient(to right, #b5a774, #e59c2e, #D71440);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 
 .fade-in {
