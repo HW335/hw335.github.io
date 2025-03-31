@@ -158,12 +158,12 @@ export default function Home() {
 
 
             <div className="w-full pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed mt-20">
-                <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                    <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 items-center"> 
+                <div className="w-full flex flex-col items-center">
+                    <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white"> 
                             <FadeIn>Other <br className="hidden xl:block"></br>Topics</FadeIn>
                         </h2>
-                        <div className="w-full pl-6 pr-6">
+                        <div className="w-full pl-12 pr-12">
                             <FadeIn>
                                 <Carousel
                                     opts={{
@@ -280,8 +280,8 @@ export default function Home() {
 
 
             <div className="w-full pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed mt-20">
-                <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                    <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 items-center"> 
+                <div className="w-full flex flex-col items-center">
+                    <div className="w-full max-w-7xl mt-20 mb-20 flex flex-col xl:flex-row gap-20 xl:items-center"> 
                         <div className="flex flex-col gap-6">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white"> 
                                 <FadeIn>Publications</FadeIn>
@@ -291,7 +291,7 @@ export default function Home() {
                                 <span className="font-bold text-xl text-white">&nbsp;{'>'}</span>
                             </FadeIn>
                         </div>
-                        <div className="w-full pl-6 pr-6">
+                        <div className="w-full pl-12 pr-12">
                             <FadeIn>
                                 <Carousel
                                     opts={{
