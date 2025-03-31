@@ -28,7 +28,6 @@ import {
     BreadcrumbItem,
     BreadcrumbLink,
     BreadcrumbList,
-    BreadcrumbPage,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 import { Slash } from "lucide-react"
@@ -55,20 +54,24 @@ export default function Home() {
                     <FadeIn>
                         <Breadcrumb>
                             <BreadcrumbList>
+                                    <BreadcrumbLink asChild>
+                                        <Link href="/" className="text-white animated-underline hover:text-white">MMLab</Link>
+                                    </BreadcrumbLink>
+                                <BreadcrumbSeparator>
+                                    <Slash className="text-white" />
+                                </BreadcrumbSeparator>
                                 <BreadcrumbItem>
-                                    <BreadcrumbLink href="/" className="text-white animated-underline hover:text-white">MMLab</BreadcrumbLink>
+                                    <BreadcrumbLink asChild>
+                                        <Link href="/research" className="text-white animated-underline hover:text-white">Resaerch</Link>
+                                    </BreadcrumbLink>
                                 </BreadcrumbItem>
                                 <BreadcrumbSeparator>
                                     <Slash className="text-white" />
                                 </BreadcrumbSeparator>
                                 <BreadcrumbItem>
-                                    <BreadcrumbLink href="/research" className="text-white animated-underline hover:text-white">Research</BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbSeparator>
-                                    <Slash className="text-white" />
-                                </BreadcrumbSeparator>
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink href="/research#publication" className="text-white animated-underline hover:text-white">Publication</BreadcrumbLink>
+                                    <BreadcrumbLink asChild>
+                                        <Link href="/research#publication" className="text-white animated-underline hover:text-white">Publication</Link>
+                                    </BreadcrumbLink>
                                 </BreadcrumbItem>
                                 <BreadcrumbSeparator>
                                     <Slash className="text-white" />
