@@ -87,6 +87,7 @@ export default function Home() {
                                         </CardContent>
                                         <CardFooter className="text-white flex justify-end">
                                             <Link href={item.link} target="_blank" className="animated-underline">More</Link>
+                                            <span>&nbsp;{'>'}</span>
                                         </CardFooter>
                                     </Card>
                                 </div>
@@ -107,6 +108,7 @@ export default function Home() {
                                         </CardContent>
                                         <CardFooter className="text-white flex justify-end">
                                             <Link href={item.link} target="_blank" className="animated-underline">More</Link>
+                                            <span>&nbsp;{'>'}</span>
                                         </CardFooter>
                                     </Card>
                                 </div>
@@ -171,7 +173,10 @@ export default function Home() {
                             </p>
                         </FadeIn>
                         <div className="flex justify-end mt-6">
-                            <FadeIn><Link href="https://mmlab.ie.cuhk.edu.hk/" target="_blank" className="text-[#e59c2e] animated-underline">More</Link></FadeIn>
+                            <FadeIn>
+                                <Link href="https://mmlab.ie.cuhk.edu.hk/" target="_blank" className="text-[#e59c2e] animated-underline">More</Link>
+                                <span className="text-[#e59c2e]">&nbsp;{'>'}</span>
+                            </FadeIn>
                         </div>
                     </div>
                 </div>
@@ -206,7 +211,10 @@ export default function Home() {
                             </p>
                         </FadeIn>
                         <div className="flex justify-end mt-6">
-                            <FadeIn><Link href="https://www.mmlab-ntu.com/" target="_blank" className="text-[#D71440] animated-underline">More</Link></FadeIn>
+                            <FadeIn>
+                                <Link href="https://www.mmlab-ntu.com/" target="_blank" className="text-[#D71440] animated-underline">More</Link>
+                                <span className="text-[#D71440]">&nbsp;{'>'}</span>
+                            </FadeIn>
                         </div>
                     </div>
                 </div>

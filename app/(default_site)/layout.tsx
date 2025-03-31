@@ -56,7 +56,7 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
             },
             {
                 subtitle: "Publication",
-                href: "/publication",
+                href: "/research#publication",
                 target: "_self",
             },
             {
