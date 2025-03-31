@@ -23,8 +23,15 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import Image from 'next/image'
-import { AspectRatio } from "@/components/ui/aspect-ratio"
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+import { Slash } from "lucide-react"
 
 
 
@@ -44,7 +51,31 @@ export default function Home() {
 
             {/* Landing */}
             <div className="w-full h-64 flex flex-row justify-center items-end pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
-                <div className="w-full max-w-7xl flex flex-row justify-start pb-10">
+                <div className="w-full max-w-7xl flex flex-col justify-start pb-10 gap-6">
+                    <FadeIn>
+                        <Breadcrumb>
+                            <BreadcrumbList>
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink href="/" className="text-white animated-underline hover:text-white">MMLab</BreadcrumbLink>
+                                </BreadcrumbItem>
+                                <BreadcrumbSeparator>
+                                    <Slash className="text-white" />
+                                </BreadcrumbSeparator>
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink href="/research" className="text-white animated-underline hover:text-white">Research</BreadcrumbLink>
+                                </BreadcrumbItem>
+                                <BreadcrumbSeparator>
+                                    <Slash className="text-white" />
+                                </BreadcrumbSeparator>
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink href="/research#publication" className="text-white animated-underline hover:text-white">Publication</BreadcrumbLink>
+                                </BreadcrumbItem>
+                                <BreadcrumbSeparator>
+                                    <Slash className="text-white" />
+                                </BreadcrumbSeparator>
+                            </BreadcrumbList>
+                        </Breadcrumb>
+                    </FadeIn>
                     <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
                         <FadeIn>All Publications</FadeIn>
                     </h1>
