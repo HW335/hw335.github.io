@@ -158,7 +158,7 @@ export default function Home() {
                 <div className="flex-3/5">
                     <div className="flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6 bg-[#652371]">
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#e59c2e] mb-6">
-                            <FadeIn>MMLab @ CHUK</FadeIn>
+                            <FadeIn>MMLab @ CUHK</FadeIn>
                         </h1>
                         <FadeIn>
                             <p className="text-white">
