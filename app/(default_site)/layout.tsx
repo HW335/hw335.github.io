@@ -45,7 +45,7 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
                 target: "_self",
             },
             {
-                subtitle: "Project [todo]",
+                subtitle: "Project",
                 href: "/project",
                 target: "_self",
             },

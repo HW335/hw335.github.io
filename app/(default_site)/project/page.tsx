@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-    title: "Research | MMLab",
+    title: "Project | MMLab",
     description: "Multimedia Laboratory",
-    keywords: ["Research", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
+    keywords: ["Project", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
 };
 
 
@@ -26,7 +26,7 @@ export default function Home() {
             <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
                 <div className="w-full max-w-7xl flex flex-row justify-start">
                     <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
-                        <FadeIn>Research</FadeIn>
+                        <FadeIn>Project</FadeIn>
                     </h1>
                 </div>
             </div>
@@ -37,8 +37,8 @@ export default function Home() {
                 <div className="w-full flex flex-col lg:flex-row pt-32" id="embodied">
                     <div className="flex-2/5 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"></div>
                     <div className="flex-3/5 flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6">
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                            AgiBot World Colosseo
+                        <h1 className="text-xl font-bold">
+                            AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
                         </h1>
                         <p>
                             We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
@@ -57,11 +57,7 @@ export default function Home() {
 
             <FadeIn>
                 <div className="w-full flex flex-col lg:flex-row-reverse pt-32" id="ad">
-                    <div className="flex-2/5 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]">
-                        <h2 className="p-6 lg:p-20 min-h-96 h-full flex flex-col justify-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
-                            Autonomous Driving
-                        </h2>
-                    </div>
+                    <div className="flex-2/5 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"></div>
                     <div className="flex-3/5 flex flex-col p-6 pt-10 pb-10 lg:p-20 gap-6">
                         <h1 className="text-xl font-bold">
                             AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
