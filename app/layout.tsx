@@ -54,8 +54,8 @@ const headers: { title: string; href: string; }[] = [
         href: "/publication",
     },
     {
-        title: "Team",
-        href: "/team",
+        title: "Member",
+        href: "/member",
     },
     {
         title: "404",

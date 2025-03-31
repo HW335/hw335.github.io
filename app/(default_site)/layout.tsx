@@ -40,42 +40,72 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
         href: "/research",
         links: [
             {
-                subtitle: "Embodied AI",
-                href: "/research#embodied",
+                subtitle: "Topic [todo]",
+                href: "/topic",
                 target: "_self",
             },
             {
-                subtitle: "Autonomous Driving",
-                href: "/research#ad",
+                subtitle: "Project [todo]",
+                href: "/project",
+                target: "_self",
+            },
+            {
+                subtitle: "Dataset [todo]",
+                href: "/dataset",
+                target: "_self",
+            },
+            {
+                subtitle: "Publication",
+                href: "/publication",
+                target: "_self",
+            },
+            {
+                subtitle: "Event [todo]",
+                href: "/event",
                 target: "_self",
             },
         ],
     },
     {
-        title: "Publication",
-        href: "/publication",
+        title: "About [todo]",
+        href: "/about",
         links: [
             {
-                subtitle: "Selected Works",
-                href: "/publication#selected",
+                subtitle: "Vision [todo]",
+                href: "/vision",
                 target: "_self",
             },
             {
-                subtitle: "Gallery",
-                href: "/publication#gallery",
+                subtitle: "News [todo]",
+                href: "/news",
+                target: "_self",
+            },
+            {
+                subtitle: "Blog [todo]",
+                href: "/blog",
+                target: "_self",
+            },
+            {
+                subtitle: "Member",
+                href: "/member",
+                target: "_self",
+            },
+            {
+                subtitle: "Partners / investors? [todo]",
+                href: "/partners",
+                target: "_self",
+            },
+            {
+                subtitle: "Join Us [todo]",
+                href: "/career",
                 target: "_self",
             },
         ],
     },
     {
-        title: "Team",
-        href: "/team",
+        title: "",
+        href: "",
         links: [
-            {
-                subtitle: "Team",
-                href: "/team",
-                target: "_self",
-            },
         ],
     },
     {
