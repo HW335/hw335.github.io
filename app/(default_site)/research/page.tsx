@@ -43,7 +43,7 @@ export default function Home() {
             <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
                 <div className="w-full max-w-7xl flex flex-row justify-start">
                     <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
-                        <FadeIn>Research</FadeIn>
+                        <FadeIn>Research<br></br>xxx xa ewav asjvcoewa jo<br></br>dw jowd</FadeIn>
                     </h1>
                 </div>
             </div>

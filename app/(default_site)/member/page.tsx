@@ -11,6 +11,14 @@ import Image from 'next/image'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+import { Slash } from "lucide-react"
 
 
 
@@ -29,10 +37,40 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-svh flex flex-row justify-center items-center pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
-                <div className="w-full max-w-7xl flex flex-row justify-start">
-                    <h1 className="font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white">
-                        <FadeIn>Member</FadeIn>
+            <div className="w-full h-64 flex flex-row justify-center items-end pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
+                <div className="w-full max-w-7xl flex flex-col justify-start pb-10 gap-6">
+                    <FadeIn>
+                        <Breadcrumb>
+                            <BreadcrumbList>
+                                    <BreadcrumbLink asChild>
+                                        <Link href="/" className="text-white animated-underline hover:text-white">MMLab</Link>
+                                    </BreadcrumbLink>
+                                <BreadcrumbSeparator>
+                                    <Slash className="text-white" />
+                                </BreadcrumbSeparator>
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink asChild>
+                                        <Link href="/about-us" className="text-white animated-underline hover:text-white">About Us</Link>
+                                    </BreadcrumbLink>
+                                </BreadcrumbItem>
+                                <BreadcrumbSeparator>
+                                    <Slash className="text-white" />
+                                </BreadcrumbSeparator>
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink asChild>
+                                        <Link href="/about-us#member" className="text-white animated-underline hover:text-white">Member</Link>
+                                    </BreadcrumbLink>
+                                </BreadcrumbItem>
+                                <BreadcrumbSeparator>
+                                    <Slash className="text-white" />
+                                </BreadcrumbSeparator>
+                            </BreadcrumbList>
+                        </Breadcrumb>
+                    </FadeIn>
+                    <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
+                        <FadeIn>
+                            All Members
+                        </FadeIn>
                     </h1>
                 </div>
             </div>
