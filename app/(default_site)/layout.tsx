@@ -40,8 +40,8 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
         href: "/about-us",
         links: [
             {
-                subtitle: "News [todo]",
-                href: "/news",
+                subtitle: "News",
+                href: "/about-us#news",
                 target: "_self",
             },
             {
