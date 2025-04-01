@@ -88,16 +88,18 @@ export default function Home() {
                 />
                 <div className="absolute flex flex-row w-full h-full justify-between">
                     <div className="flex-1 h-full"></div>
-                    <FadeIn>
-                        <div className="flex-grow  h-full w-full max-w-7xl ml-6 lg:ml-20 mr-6 lg:mr-20 flex flex-col gap-6 text-white justify-center">
+                    <div className="flex-grow  h-full w-full max-w-7xl ml-6 lg:ml-20 mr-6 lg:mr-20 flex flex-col gap-6 text-white justify-center">
+                        <FadeIn>
                             <h1 className="text-xl font-bold">
                                 AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
                             </h1>
+                        </FadeIn>
+                        <FadeIn>
                             <p>
                                 We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
                             </p>
-                        </div>
-                    </FadeIn>
+                        </FadeIn>
+                    </div>
                     <div className="flex-1 h-full bg-background"></div>
                 </div>
             </div>
@@ -110,23 +112,25 @@ export default function Home() {
                 />
                 <div className="absolute flex flex-row w-full h-full justify-between">
                     <div className="flex-1 h-full bg-background"></div>
-                    <FadeIn>
-                        <div className="flex-grow  h-full w-full max-w-7xl ml-6 lg:ml-20 mr-6 lg:mr-20 flex flex-col gap-6 text-white justify-center">
+                    <div className="flex-grow  h-full w-full max-w-7xl ml-6 lg:ml-20 mr-6 lg:mr-20 flex flex-col gap-6 text-white justify-center">
+                        <FadeIn>
                             <h1 className="text-xl font-bold">
                                 AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
                             </h1>
+                        </FadeIn>
+                        <FadeIn>
                             <p>
                                 We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
                             </p>
-                        </div>
-                    </FadeIn>
+                        </FadeIn>
+                    </div>
                     <div className="flex-1 h-full"></div>
                 </div>
             </div>
 
 
             
-            <div className="w-full flex flex-col xl:flex-row scroll-mt-20 mt-20" id="MMLab@HKU">
+            <div className="w-full flex flex-col xl:flex-row scroll-mt-20 mt-32" id="MMLab@HKU">
                 <div className="flex-2/5 min-h-96 relative">
                     <Image
                         src="/background/mmlab@hku.jpg"
