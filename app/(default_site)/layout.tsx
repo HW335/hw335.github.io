@@ -36,34 +36,8 @@ const inter = Inter({
 // footer
 const footers: { title: string; href: string; links: { subtitle: string; href: string; target: string; }[];}[] = [
     {
-        title: "Research",
-        href: "/research",
-        links: [
-            {
-                subtitle: "Topic",
-                href: "/research#topic",
-                target: "_self",
-            },
-            {
-                subtitle: "Publication",
-                href: "/research#publication",
-                target: "_self",
-            },            
-            {
-                subtitle: "Open Source",
-                href: "/research#open-source",
-                target: "_self",
-            },
-            {
-                subtitle: "Event",
-                href: "/research#event",
-                target: "_self",
-            },
-        ],
-    },
-    {
-        title: "About [todo]",
-        href: "/about",
+        title: "About Us",
+        href: "/about-us",
         links: [
             {
                 subtitle: "News [todo]",
@@ -88,6 +62,32 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
             {
                 subtitle: "Join Us [todo]",
                 href: "/career",
+                target: "_self",
+            },
+        ],
+    },
+    {
+        title: "Research",
+        href: "/research",
+        links: [
+            {
+                subtitle: "Topic",
+                href: "/research#topic",
+                target: "_self",
+            },
+            {
+                subtitle: "Publication",
+                href: "/research#publication",
+                target: "_self",
+            },            
+            {
+                subtitle: "Open Source",
+                href: "/research#open-source",
+                target: "_self",
+            },
+            {
+                subtitle: "Event",
+                href: "/research#event",
                 target: "_self",
             },
         ],
