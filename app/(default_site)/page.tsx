@@ -68,79 +68,71 @@ export default function Home() {
                             Explore
                         </FadeIn>
                         <FadeIn>
-                            News and Highlights
+                            Highlights xxx
                         </FadeIn>
                     </h2>
                     <div className="flex flex-col justify-end">
                         <FadeIn>
-                            <Link href="/about-us#news" className="animated-underline">More</Link>
+                            <Link href="/about-us#news" className="animated-underline">News & Blog</Link>
                             <span>&nbsp;{'>'}</span>
                         </FadeIn>
                     </div>
                 </div>
             </div>
-            <div className="w-full pl-6 pr-6 flex flex-col items-center mb-20">
-                <div className="w-full max-w-7xl mt-10 flex flex-col lg:flex-row justify-between gap-6">
-                    <div className="w-full flex flex-col gap-6">
-                        {news.slice(0,1).map((item) => (
-                            <FadeIn key={item.title}>
-                                <div>
-                                    <Card className="border-pink-800 bg-pink-800" key={item.title}>
-                                        <CardHeader>
-                                            <CardTitle className="text-xl text-white">{item.title}</CardTitle>
-                                            <CardDescription className="text-white">{item.date}</CardDescription>
-                                        </CardHeader>
-                                        <CardContent>
-                                            <p className="text-white">{item.detail}</p>
-                                        </CardContent>
-                                        <CardFooter className="text-white flex justify-end">
-                                            <Link href={item.link} target="_blank" className="animated-underline">More</Link>
-                                            <span>&nbsp;{'>'}</span>
-                                        </CardFooter>
-                                    </Card>
-                                </div>
-                            </FadeIn>
-                        ))}   
-                    </div>
-                    <div className="w-full flex flex-col gap-6">
-                        {news.slice(1,2).map((item) => (
-                            <FadeIn key={item.title}>
-                                <div>
-                                    <Card className="border-pink-800 bg-pink-800" key={item.title}>
-                                        <CardHeader>
-                                            <CardTitle className="text-xl text-white">{item.title}</CardTitle>
-                                            <CardDescription className="text-white">{item.date}</CardDescription>
-                                        </CardHeader>
-                                        <CardContent>
-                                            <p className="text-white">{item.detail}</p>
-                                        </CardContent>
-                                        <CardFooter className="text-white flex justify-end">
-                                            <Link href={item.link} target="_blank" className="animated-underline">More</Link>
-                                            <span>&nbsp;{'>'}</span>
-                                        </CardFooter>
-                                    </Card>
-                                </div>
-                            </FadeIn>
-                        ))}   
-                    </div>
+            <div className="w-full relative mt-20 h-96">
+                <Image
+                    src="/background/mmlab@hu.jpg"
+                    alt="mmlab@hku"
+                    fill
+                    className="object-cover object-center loading select-none h-full"
+                />
+                <div className="absolute flex flex-row w-full h-full justify-between">
+                    <div className="flex-1 h-full"></div>
+                    <FadeIn>
+                        <div className="flex-grow  h-full w-full max-w-7xl ml-6 lg:ml-20 mr-6 lg:mr-20 flex flex-col gap-6 text-white justify-center">
+                            <h1 className="text-xl font-bold">
+                                AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
+                            </h1>
+                            <p>
+                                We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
+                            </p>
+                        </div>
+                    </FadeIn>
+                    <div className="flex-1 h-full bg-background"></div>
                 </div>
             </div>
-            <div className="w-full pl-6 pr-6 flex flex-col items-center mt-10">
-                <div className="w-full max-w-7xl flex flex-row justify-end">
-
+            <div className="w-full relative mt-20 h-96">
+                <Image
+                    src="/background/mmlab@hu.jpg"
+                    alt="mmlab@hku"
+                    fill
+                    className="object-cover object-center loading select-none h-full"
+                />
+                <div className="absolute flex flex-row w-full h-full justify-between">
+                    <div className="flex-1 h-full bg-background"></div>
+                    <FadeIn>
+                        <div className="flex-grow  h-full w-full max-w-7xl ml-6 lg:ml-20 mr-6 lg:mr-20 flex flex-col gap-6 text-white justify-center">
+                            <h1 className="text-xl font-bold">
+                                AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems
+                            </h1>
+                            <p>
+                                We explore how scalable robot data can address real-world challenges for generalized robotic manipulation. Introducing AgiBot World, a large-scale platform comprising over 1 million trajectories across 217 tasks in five deployment scenarios, we achieve an order-of-magnitude increase in data scale compared to existing datasets. 
+                            </p>
+                        </div>
+                    </FadeIn>
+                    <div className="flex-1 h-full"></div>
                 </div>
             </div>
-
 
 
             
-            <div className="w-full flex flex-col xl:flex-row scroll-mt-20" id="MMLab@HKU">
+            <div className="w-full flex flex-col xl:flex-row scroll-mt-20 mt-20" id="MMLab@HKU">
                 <div className="flex-2/5 min-h-96 relative">
                     <Image
                         src="/background/mmlab@hku.jpg"
                         alt="mmlab@hku"
                         fill
-                        className="object-cover object-center loading"
+                        className="object-cover object-center loading select-none"
                     />
                 </div>
                 <div className="flex-3/5">
@@ -167,7 +159,7 @@ export default function Home() {
                         src="/background/mmlab@cuhk.jpg"
                         alt="mmlab@cuhk"
                         fill
-                        className="object-cover object-center loading"
+                        className="object-cover object-center loading select-none"
                     />
                 </div>
                 <div className="flex-3/5">
@@ -200,7 +192,7 @@ export default function Home() {
                         src="/background/mmlab@ntu.jpg"
                         alt="mmlab@ntu"
                         fill
-                        className="object-cover object-center loading"
+                        className="object-cover object-center loading select-none"
                     />
                 </div>
                 <div className="flex-3/5">
