@@ -73,7 +73,7 @@ export default function Home() {
                     </h2>
                     <div className="flex flex-col justify-end">
                         <FadeIn>
-                            <Link href="/about-us#news" className="animated-underline">News & Blog</Link>
+                            <Link href="/about-us" className="animated-underline">About Us</Link>
                             <span>&nbsp;{'>'}</span>
                         </FadeIn>
                     </div>
