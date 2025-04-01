@@ -45,23 +45,18 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
                 target: "_self",
             },
             {
-                subtitle: "Blog [todo]",
-                href: "/blog",
+                subtitle: "Blog",
+                href: "/about-us#blog",
                 target: "_self",
             },
             {
                 subtitle: "Member",
-                href: "/member",
+                href: "/about-us#member",
                 target: "_self",
             },
             {
-                subtitle: "Partners / investors? [todo]",
-                href: "/partners",
-                target: "_self",
-            },
-            {
-                subtitle: "Join Us [todo]",
-                href: "/career",
+                subtitle: "Carees",
+                href: "/about-us#career",
                 target: "_self",
             },
         ],
