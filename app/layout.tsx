@@ -46,7 +46,7 @@ const headers: { title: string; href: string; }[] = [
         href: "/",
     },
     {
-        title: "Aubout Us",
+        title: "About Us",
         href: "/about-us",
     },
     {
