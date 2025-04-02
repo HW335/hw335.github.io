@@ -191,7 +191,7 @@ export default function RootLayout({
                                         </svg>
                                     </Link>
                                     <HoverCard>
-                                        <HoverCardTrigger  className="select-none hover:text-amber-400">
+                                        <HoverCardTrigger  className="select-none hover:text-amber-400 hover:cursor-pointer">
                                             <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                                 <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
                                             </svg>
@@ -215,7 +215,7 @@ export default function RootLayout({
                                     </svg>
                                 </Link>
                                 <HoverCard>
-                                    <HoverCardTrigger  className="select-none hover:text-amber-400">
+                                    <HoverCardTrigger  className="select-none hover:text-amber-400 hover:cursor-pointer">
                                         <svg className="size-8 text-inherit" aria-hidden="true" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
                                         </svg>
