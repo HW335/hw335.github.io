@@ -1,5 +1,12 @@
 export const open_source_categories: { category: string; years: string[]; }[] = [
     {
+        category: "Hightlight",
+        years: [
+            "Project",
+            "Dataset",
+        ],
+    },
+    {
         category: "Project",
         years: [
             "2025",
@@ -52,7 +59,7 @@ export const open_sources: {
             },
         ],
         keys :[
-            "Project", "2025"
+            "Project", "2025", "Hightlight"
         ],
     },
     {

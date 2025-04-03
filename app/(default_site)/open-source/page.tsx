@@ -94,7 +94,7 @@ export default function Home() {
 
 
                         <FadeIn>
-                            <TabsList className="grid w-full grid-cols-2">
+                            <TabsList className="grid w-full grid-cols-3">
                                 {open_source_categories.map((category) => (
                                     <TabsTrigger value={category.category} key={category.category}>{category.category}</TabsTrigger>
                                 ))}
@@ -153,7 +153,7 @@ export default function Home() {
                                         <div className="w-full flex flex-col items-center">
                                             <Separator className="max-w-7xl mt-20"/>
                                         </div>
-                                        
+
                                     </div>
                                 ))}
 
