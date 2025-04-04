@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 
-
+import Image from 'next/image'
 import Link from "next/link"
 import {
     Card,
@@ -16,7 +16,6 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import Image from 'next/image'
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Separator } from "@/components/ui/separator"
 
@@ -90,7 +89,7 @@ export default function Home() {
                         {news.slice(0,2).map((item) => (
                             <FadeIn key={item.title}>
                                 <div>
-                                    <Card className="border-pink-800 bg-pink-800" key={item.title}>
+                                    <Card className="border-0 bg-pink-800" key={item.title}>
                                         <CardHeader>
                                             <CardTitle className="text-xl text-white">{item.title}</CardTitle>
                                             <CardDescription className="text-white">{item.date}</CardDescription>

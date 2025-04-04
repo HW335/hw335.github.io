@@ -1,4 +1,23 @@
-export const news: { title: string; date: string; detail: string; link:  string; keys: string[]; }[] = [
+export const news_categories: { category: string; category_id: string; }[] = [
+    {
+        category: "2025",
+        category_id: "#2025",
+    },
+    {
+        category: "2024",
+        category_id: "#2024",
+    },
+]
+
+
+
+export const news: { 
+    title: string; 
+    date: string; 
+    detail: string; 
+    link: string; 
+    keys: string[]; 
+}[] = [
     {
         title: "In Memoriam: Xiaoou Tang",
         date: "2024.05",
