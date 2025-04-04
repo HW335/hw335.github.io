@@ -51,8 +51,8 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-72 flex flex-row justify-center bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
-                <div className="w-full h-full pl-6 pr-6 max-w-7xl flex flex-col justify-end pb-10 gap-6">
+            <div className="w-full h-72 pl-6 pr-6 flex flex-row justify-center bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
+                <div className="w-full h-full max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
                             <BreadcrumbList>
