@@ -38,7 +38,7 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 
-import { publications, categories } from "@/data/publication"
+import { publications, publication_categories } from "@/data/publication"
 
 
 
@@ -101,7 +101,7 @@ export default function Home() {
                                 <TabsTrigger value="Year">Year</TabsTrigger>
                                 <TabsTrigger value="PI">PI</TabsTrigger>
                             </TabsList>
-                            {categories.map((c) => (
+                            {publication_categories.map((c) => (
                                 <TabsContent value={c.c1} key={c.c1}>
                                     <Tabs defaultValue={c.c2s[0]} className="mt-3">
                                         <TabsList className={"grid w-full " + c.len}>

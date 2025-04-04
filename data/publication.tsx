@@ -1,4 +1,4 @@
-export const categories: { c1: string; c2s: string[]; len: string}[] = [
+export const publication_categories: { c1: string; c2s: string[]; len: string}[] = [
     {
         c1: "Topic",
         c2s: [
