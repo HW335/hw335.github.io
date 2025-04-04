@@ -24,7 +24,7 @@ export const news: {
         detail: "The Editors-in-Chief of the International Journal of Computer Vision (IJCV) are deeply saddened by the significant loss of Xiaoou Tang, a former Editor-in-Chief of IJCV, who passed away on 15 December 2023 at the age of 55.",
         link:"https://link.springer.com/article/10.1007/s11263-024-02037-3",
         keys :[
-            "2024"
+            "2024", "selected"
         ],
     },
     {
@@ -42,7 +42,7 @@ export const news: {
         detail: "The AYSF committee acknowledges his contribution to the development of AI-driven mixed reality and would like to support his exploration in the direction of high-quality reconstruction for virtual/mixed reality toward advancing AI theories, algorithms, and systems for holistic perceptions.",
         link:"https://www.aysfellowship.org/news/announcement-2024-ays-fellows",
         keys :[
-            "2024"
+            "2024", "selected"
         ],
     },
     {
@@ -60,7 +60,7 @@ export const news: {
         detail: "The team has a total of 15 papers accepted to ECCV 2024.",
         link:"https://www.mmlab-ntu.com/conference/eccv2024/index.html",
         keys :[
-            "2024"
+            "2024", "selected"
         ],
     },
 ]

@@ -27,7 +27,7 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 import { news } from "@/data/news"
-
+const selected_news = [...news.values()].filter(n => n.keys.includes("selected"))
 
 
 
@@ -86,7 +86,7 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <div className="w-full max-w-7xl mt-10 flex flex-col lg:flex-row justify-between gap-6">
                     <div className="w-full flex flex-col gap-6">
-                        {news.slice(0,2).map((item) => (
+                        {selected_news.slice(0,selected_news.length/2).map((item) => (
                             <FadeIn key={item.title}>
                                 <div>
                                     <Card className="border-0 bg-pink-800" key={item.title}>
@@ -107,7 +107,7 @@ export default function Home() {
                         ))}   
                     </div>
                     <div className="w-full flex flex-col gap-6">
-                        {news.slice(2,news.length).map((item) => (
+                        {selected_news.slice(selected_news.length/2,news.length).map((item) => (
                             <FadeIn key={item.title}>
                                 <div>
                                     <Card className="border-pink-800 bg-pink-800" key={item.title}>
