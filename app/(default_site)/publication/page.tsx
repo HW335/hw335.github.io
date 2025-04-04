@@ -42,6 +42,23 @@ import { publications, publication_categories } from "@/data/publication"
 
 
 
+const paths: { path: string; url: string; }[] = [
+    {
+        path: "MMLab",
+        url: "/"
+    },
+    {
+        path: "Resaerch",
+        url: "/research"
+    },
+    {
+        path: "Publication",
+        url: "/research#publication"
+    },
+]
+
+
+
 export default function Home() {
     return (
         <main className="h-full">
@@ -49,108 +66,104 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-64 flex flex-row justify-center items-end pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
-                <div className="w-full max-w-7xl flex flex-col justify-start pb-10 gap-6">
+            <div className="w-full h-72 flex flex-row justify-center bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
+                <div className="w-full h-full pl-6 pr-6 max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
                             <BreadcrumbList>
-                                    <BreadcrumbLink asChild>
-                                        <Link href="/" className="text-white animated-underline hover:text-white">MMLab</Link>
-                                    </BreadcrumbLink>
-                                <BreadcrumbSeparator>
-                                    <Slash className="text-white" />
-                                </BreadcrumbSeparator>
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink asChild>
-                                        <Link href="/research" className="text-white animated-underline hover:text-white">Resaerch</Link>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbSeparator>
-                                    <Slash className="text-white" />
-                                </BreadcrumbSeparator>
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink asChild>
-                                        <Link href="/research#publication" className="text-white animated-underline hover:text-white">Publication</Link>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbSeparator>
-                                    <Slash className="text-white" />
-                                </BreadcrumbSeparator>
+                                {paths.map((path) => (
+                                    <BreadcrumbList key={path.path}>
+                                        <BreadcrumbItem>
+                                            <BreadcrumbLink asChild>
+                                                <Link href="path.url" className="text-white animated-underline hover:text-white">
+                                                    {path.path}
+                                                </Link>
+                                            </BreadcrumbLink>
+                                        </BreadcrumbItem>
+                                        <BreadcrumbItem>
+                                            <BreadcrumbSeparator>
+                                                <Slash className="text-white" />
+                                            </BreadcrumbSeparator>
+                                        </BreadcrumbItem>
+                                    </BreadcrumbList>
+                                ))}
                             </BreadcrumbList>
                         </Breadcrumb>
                     </FadeIn>
                     <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
-                        <FadeIn>Publications</FadeIn>
+                        <FadeIn>
+                            Publications
+                        </FadeIn>
                     </h1>
                 </div>
             </div>
  
  
 
-            <FadeIn>
-                <div className="w-full pl-6 pr-6 flex flex-col items-center">
-                    
+            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+                <div className="w-full max-w-7xl mt-20">
+                    <Tabs defaultValue="Topic" >
 
 
-                    <div className="w-full max-w-7xl mt-20">
 
-
-                        <Tabs defaultValue="Topic" >
+                        <FadeIn>
                             <TabsList className="grid w-full grid-cols-3">
-                                <TabsTrigger value="Topic">Topic</TabsTrigger>
-                                <TabsTrigger value="Year">Year</TabsTrigger>
-                                <TabsTrigger value="PI">PI</TabsTrigger>
+                                {publication_categories.map((category) => (
+                                    <TabsTrigger value={category.c1} key={category.c1}>{category.c1}</TabsTrigger>
+                                ))}
                             </TabsList>
-                            {publication_categories.map((c) => (
-                                <TabsContent value={c.c1} key={c.c1}>
-                                    <Tabs defaultValue={c.c2s[0]} className="mt-3">
+                        </FadeIn>
+
+
+
+                        {publication_categories.map((c) => (
+                            <TabsContent value={c.c1} key={c.c1}>
+                                <Tabs defaultValue={c.c2s[0]} className="mt-3">
+
+                                    <FadeIn>
                                         <TabsList className={"grid w-full " + c.len}>
                                             {c.c2s.map((c2) => (
                                                 <TabsTrigger value={c2} key={c2}>{c2}</TabsTrigger>
                                             ))}
                                         </TabsList>
-                                        {c.c2s.map((c2) => (
-                                            <TabsContent value={c2} key={c2} className="mt-6">
-                                                <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-6">
-                                                    {[...publications.values()].filter(publication => publication.keys.includes(c2)).map(( publication) => (
-                                                        <FadeIn key={publication.title}>
-                                                            <div>
-                                                                <Card className="border-border">
-                                                                    <CardHeader>
-                                                                        <CardTitle className="text-xl">{publication.title}</CardTitle>
-                                                                        <CardDescription>{publication.authors}</CardDescription>
-                                                                    </CardHeader>
-                                                                    <CardContent>
-                                                                        <p>{publication.proceedings}</p>
-                                                                    </CardContent>
-                                                                    <CardFooter className="flex flex-row gap-3 flex-wrap">
-                                                                        {publication.links.map((link) => (
-                                                                            <Link href={link.url} target="_blank" className="animated-underline" key={link.website}>{link.website}</Link>
-                                                                        ))} 
-                                                                    </CardFooter>
-                                                                </Card>
-                                                            </div>
-                                                        </FadeIn>
-                                                    ))}   
-                                                </div>
-                                            </TabsContent>
-                                        ))}                       
-                                    </Tabs>       
-                                </TabsContent>
-                            ))}
-                            <TabsContent value="account">
+                                    </FadeIn>
 
+                                    {c.c2s.map((c2) => (
+                                        <TabsContent value={c2} key={c2} className="mt-6">
+                                            <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-6">
+                                                {[...publications.values()].filter(publication => publication.keys.includes(c2)).map(( publication) => (
+                                                    <FadeIn key={publication.title}>
+                                                        <div>
+                                                            <Card className="border-border">
+                                                                <CardHeader>
+                                                                    <CardTitle className="text-xl">{publication.title}</CardTitle>
+                                                                    <CardDescription>{publication.authors}</CardDescription>
+                                                                </CardHeader>
+                                                                <CardContent>
+                                                                    <p>{publication.proceedings}</p>
+                                                                </CardContent>
+                                                                <CardFooter className="flex flex-row gap-3 flex-wrap">
+                                                                    {publication.links.map((link) => (
+                                                                        <Link href={link.url} target="_blank" className="animated-underline" key={link.website}>{link.website}</Link>
+                                                                    ))} 
+                                                                </CardFooter>
+                                                            </Card>
+                                                        </div>
+                                                    </FadeIn>
+                                                ))}   
+                                            </div>
+                                        </TabsContent>
+                                    ))}     
 
-
+                                </Tabs>       
                             </TabsContent>
-
-                        </Tabs>
-
+                        ))}
 
 
-                    </div>
+
+                    </Tabs>
                 </div>
-            </FadeIn>
+            </div>
 
 
 

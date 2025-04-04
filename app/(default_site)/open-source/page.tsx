@@ -54,9 +54,9 @@ export default function Home() {
                     <FadeIn>
                         <Breadcrumb>
                             <BreadcrumbList>
-                                    <BreadcrumbLink asChild>
-                                        <Link href="/" className="text-white animated-underline hover:text-white">MMLab</Link>
-                                    </BreadcrumbLink>
+                                <BreadcrumbLink asChild>
+                                    <Link href="/" className="text-white animated-underline hover:text-white">MMLab</Link>
+                                </BreadcrumbLink>
                                 <BreadcrumbSeparator>
                                     <Slash className="text-white" />
                                 </BreadcrumbSeparator>
