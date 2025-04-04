@@ -54,16 +54,8 @@ const headers: { title: string; href: string; }[] = [
         href: "/research",
     },
     {
-        title: "Publication",
-        href: "/publication",
-    },
-    {
-        title: "Member",
-        href: "/member",
-    },
-    {
-        title: "404",
-        href: "/404",
+        title: "Join Us",
+        href: "/about-us#career",
     },
 ]
 
@@ -83,11 +75,11 @@ export default function RootLayout({
                 <header>
                     <div className="fixed flex flex-row gap-3 m-6 z-20 flex-wrap">
                         {headers.map((header) => (
-                            <Button asChild key={header.title} className="bg-background text-foreground hover:bg-amber-400 hidden md:block">
+                            <Button asChild key={header.title} className="bg-background text-foreground hover:bg-amber-400">
                                 <Link href={header.href} className="select-none">{header.title}</Link>
                             </Button>
                         ))}
-                        <Sheet>
+                        {/* <Sheet>
                             <SheetTrigger asChild>
                                 <Button asChild key={headers[0].title} className="bg-background text-foreground hover:bg-amber-400 md:hidden">
                                     <Button className="select- hover:cursor-pointer">{headers[0].title}</Button>
@@ -110,7 +102,7 @@ export default function RootLayout({
                                     ))}
                                 </div>
                             </SheetContent>
-                        </Sheet>
+                        </Sheet> */}
                     </div>
                     <div className="fixed right-0 bottom-0 m-6 z-20">
                         <Link href="#" className="bg-background text-foreground hover:bg-amber-400 rounded-full flex justify-center items-center p-2 select-none">

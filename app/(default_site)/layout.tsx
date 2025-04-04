@@ -60,7 +60,7 @@ const footers: { title: string; href: string; links: { subtitle: string; href: s
                 target: "_self",
             },
             {
-                subtitle: "Carees",
+                subtitle: "Career",
                 href: "/about-us#career",
                 target: "_self",
             },
