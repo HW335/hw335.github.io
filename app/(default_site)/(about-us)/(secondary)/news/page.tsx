@@ -126,7 +126,7 @@ export default function Home() {
                                 <div className="w-full flex flex-col items-center">
                                     
                                     <h2 className="w-full max-w-7xl mt-20 mb-20 text-6xl font-bold"> 
-                                        <Link href={category.category_id} className="scroll-mt-20 group flex items-center" id={category.category}>
+                                        <Link href={category.category_id} className="scroll-mt-32 group flex items-center" id={category.category}>
                                             {category.category}
                                             <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">

@@ -130,7 +130,7 @@ export default function Home() {
 
 
             
-            <div className="w-full flex flex-col xl:flex-row scroll-mt-20 mt-32" id="MMLab@HKU">
+            <div className="w-full flex flex-col xl:flex-row scroll-mt-32 mt-32" id="MMLab@HKU">
                 <div className="flex-2/5 min-h-96 relative">
                     <Image
                         src="/background/mmlab@hku.jpg"
@@ -157,7 +157,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="w-full flex flex-col xl:flex-row-reverse scroll-mt-20" id="MMLab@CUHK">
+            <div className="w-full flex flex-col xl:flex-row-reverse scroll-mt-32" id="MMLab@CUHK">
                 <div className="flex-2/5 min-h-96 relative">
                     <Image
                         src="/background/mmlab@cuhk.jpg"
@@ -190,7 +190,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="w-full flex flex-col xl:flex-row scroll-mt-20" id="MMLab@NTU">
+            <div className="w-full flex flex-col xl:flex-row scroll-mt-32" id="MMLab@NTU">
                 <div className="flex-2/5 min-h-96 relative">
                     <Image
                         src="/background/mmlab@ntu.jpg"

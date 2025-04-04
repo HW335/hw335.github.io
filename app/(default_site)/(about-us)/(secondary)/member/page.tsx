@@ -117,7 +117,7 @@ export default function Home() {
                             <FadeIn>
                                 <div className="w-full flex flex-col items-center">
                                     <h2 className="w-full max-w-7xl mt-20 text-6xl font-bold"> 
-                                        <Link href={branch.branch_id_} className="scroll-mt-20 group flex items-center" id={branch.branch_id}>
+                                        <Link href={branch.branch_id_} className="scroll-mt-32 group flex items-center" id={branch.branch_id}>
                                             {branch.branch}
                                             <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">

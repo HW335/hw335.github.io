@@ -60,7 +60,7 @@ export default function Home() {
                     <div className="w-full max-w-7xl flex flex-row justify-between">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
                             <FadeIn>
-                                <Link href="#news" className="scroll-mt-20 group flex items-center" id="news">
+                                <Link href="#news" className="scroll-mt-32 group flex items-center" id="news">
                                     News
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -144,7 +144,7 @@ export default function Home() {
                     <div className="w-full max-w-7xl flex flex-row justify-between">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
                             <FadeIn>
-                                <Link href="#blog" className="scroll-mt-20 group flex items-center" id="blog">
+                                <Link href="#blog" className="scroll-mt-32 group flex items-center" id="blog">
                                     Blog
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -179,7 +179,7 @@ export default function Home() {
                     <div className="w-full max-w-7xl flex flex-row justify-between">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
                             <FadeIn>
-                                <Link href="#member" className="scroll-mt-20 group flex items-center" id="member">
+                                <Link href="#member" className="scroll-mt-32 group flex items-center" id="member">
                                     Members
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -214,7 +214,7 @@ export default function Home() {
                     <div className="w-full max-w-7xl flex flex-row justify-between">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
                             <FadeIn>
-                                <Link href="#career" className="scroll-mt-20 group flex items-center" id="career">
+                                <Link href="#career" className="scroll-mt-32 group flex items-center" id="career">
                                     Carees
                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">

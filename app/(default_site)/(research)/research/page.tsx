@@ -55,7 +55,7 @@ export default function Home() {
                 
                 <h2 className="w-full max-w-7xl mt-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
                     <FadeIn>
-                        <Link href="#topic" className="scroll-mt-20 group flex items-center" id="topic">
+                        <Link href="#topic" className="scroll-mt-32 group flex items-center" id="topic">
                             Topic
                             <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -174,7 +174,7 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <h2 className="w-full max-w-7xl mt-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
                     <FadeIn>
-                        <Link href="#publication" className="scroll-mt-20 group flex items-center" id="publication">
+                        <Link href="#publication" className="scroll-mt-32 group flex items-center" id="publication">
                             Publication
                             <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -302,7 +302,7 @@ export default function Home() {
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <h2 className="w-full max-w-7xl mt-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
                     <FadeIn>
-                        <Link href="#open-source" className="scroll-mt-20 group flex items-center" id="open-source">
+                        <Link href="#open-source" className="scroll-mt-32 group flex items-center" id="open-source">
                             Open Source
                             <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -377,7 +377,7 @@ export default function Home() {
                 <div className="w-full pl-6 pr-6 flex flex-col items-center">
                     <h2 className="w-full max-w-7xl mt-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"> 
                         <FadeIn>
-                            <Link href="#event" className="scroll-mt-20 group flex items-center" id="event">
+                            <Link href="#event" className="scroll-mt-32 group flex items-center" id="event">
                                 Event
                                 <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
