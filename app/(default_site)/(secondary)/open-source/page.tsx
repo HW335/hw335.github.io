@@ -120,7 +120,7 @@ export default function Home() {
                                     <div className="mt-20" key={year}>
 
                                         <FadeIn>
-                                            <h2 className="w-full max-w-7xl mb-10 text-6xl font-bold"> 
+                                            <h2 className="w-full max-w-7xl mb-20 text-6xl font-bold"> 
                                                 <Link href="#teir2" className="scroll-mt-20 group flex items-center" id={year}>
                                                     {year}
                                                     <span className="ml-6 hidden group-hover:inline-block size-10 text-foreground">
