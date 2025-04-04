@@ -99,7 +99,7 @@ export default function Home() {
 
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <div className="w-full max-w-7xl mt-20">
-                    <Tabs defaultValue="Topic" >
+                    <Tabs defaultValue={publication_categories[0].c1}>
 
 
 
