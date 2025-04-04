@@ -128,7 +128,7 @@ export default function Home() {
                                         </Link>
                                     </h2>
                                     <div className="w-full max-w-7xl mt-20 grid gap-10 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5">
-                                        {members.map((member) => (
+                                        {branch.person.map((member) => (
                                             <div className="flex flex-col gap-3" key={member.name}>
                                                 <AspectRatio ratio={1/1}>
                                                     <Image

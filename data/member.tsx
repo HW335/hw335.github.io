@@ -56,21 +56,6 @@ export const members: {
                 affiliation: "HKU",
             },
             {
-                name: "Hongyang Li",
-                img: "/person/hongyang_li.jpg",
-                affiliation: "HKU",
-            },
-            {
-                name: "Hongyang Li",
-                img: "/person/hongyang_li.jpg",
-                affiliation: "HKU",
-            },
-            {
-                name: "Hongyang Li",
-                img: "/person/hongyang_li.jpg",
-                affiliation: "HKU",
-            },
-            {
                 name: "Ping Luo",
                 img: "/person/ping_luo.jpg",
                 affiliation: "HKU",
