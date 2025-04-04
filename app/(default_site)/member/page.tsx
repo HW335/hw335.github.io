@@ -27,6 +27,20 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 import { members } from "@/data/member"
+const paths: { path: string; url: string; }[] = [
+    {
+        path: "MMLab",
+        url: "/"
+    },
+    {
+        path: "About Us",
+        url: "/about-us"
+    },
+    {
+        path: "Member",
+        url: "/about-us#member"
+    },
+]
 
 
 
@@ -37,33 +51,27 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-64 flex flex-row justify-center items-end pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
-                <div className="w-full max-w-7xl flex flex-col justify-start pb-10 gap-6">
+            <div className="w-full h-72 flex flex-row justify-center bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
+                <div className="w-full h-full pl-6 pr-6 max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
                             <BreadcrumbList>
-                                    <BreadcrumbLink asChild>
-                                        <Link href="/" className="text-white animated-underline hover:text-white">MMLab</Link>
-                                    </BreadcrumbLink>
-                                <BreadcrumbSeparator>
-                                    <Slash className="text-white" />
-                                </BreadcrumbSeparator>
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink asChild>
-                                        <Link href="/about-us" className="text-white animated-underline hover:text-white">About Us</Link>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbSeparator>
-                                    <Slash className="text-white" />
-                                </BreadcrumbSeparator>
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink asChild>
-                                        <Link href="/about-us#member" className="text-white animated-underline hover:text-white">Member</Link>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbSeparator>
-                                    <Slash className="text-white" />
-                                </BreadcrumbSeparator>
+                                {paths.map((path) => (
+                                    <BreadcrumbList key={path.path}>
+                                        <BreadcrumbItem>
+                                            <BreadcrumbLink asChild>
+                                                <Link href={path.url} className="text-white animated-underline hover:text-white">
+                                                    {path.path}
+                                                </Link>
+                                            </BreadcrumbLink>
+                                        </BreadcrumbItem>
+                                        <BreadcrumbItem>
+                                            <BreadcrumbSeparator>
+                                                <Slash className="text-white" />
+                                            </BreadcrumbSeparator>
+                                        </BreadcrumbItem>
+                                    </BreadcrumbList>
+                                ))}
                             </BreadcrumbList>
                         </Breadcrumb>
                     </FadeIn>
