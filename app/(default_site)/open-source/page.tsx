@@ -39,6 +39,20 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 import { open_source_categories, open_sources } from "@/data/open-source"
+const paths: { path: string; url: string; }[] = [
+    {
+        path: "MMLab",
+        url: "/"
+    },
+    {
+        path: "Resaerch",
+        url: "/research"
+    },
+    {
+        path: "Open Source",
+        url: "/research#open-source"
+    },
+]
 
 
 
@@ -49,38 +63,34 @@ export default function Home() {
 
 
             {/* Landing */}
-            <div className="w-full h-64 flex flex-row justify-center items-end pl-6 pr-6 bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
-                <div className="w-full max-w-7xl flex flex-col justify-start pb-10 gap-6">
+            <div className="w-full h-72 flex flex-row justify-center bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440] bg-fixed">
+                <div className="w-full h-full pl-6 pr-6 max-w-7xl flex flex-col justify-end pb-10 gap-6">
                     <FadeIn>
                         <Breadcrumb>
                             <BreadcrumbList>
-                                <BreadcrumbLink asChild>
-                                    <Link href="/" className="text-white animated-underline hover:text-white">MMLab</Link>
-                                </BreadcrumbLink>
-                                <BreadcrumbSeparator>
-                                    <Slash className="text-white" />
-                                </BreadcrumbSeparator>
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink asChild>
-                                        <Link href="/research" className="text-white animated-underline hover:text-white">Resaerch</Link>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbSeparator>
-                                    <Slash className="text-white" />
-                                </BreadcrumbSeparator>
-                                <BreadcrumbItem>
-                                    <BreadcrumbLink asChild>
-                                        <Link href="/research#open-source" className="text-white animated-underline hover:text-white">Open Source</Link>
-                                    </BreadcrumbLink>
-                                </BreadcrumbItem>
-                                <BreadcrumbSeparator>
-                                    <Slash className="text-white" />
-                                </BreadcrumbSeparator>
+                                {paths.map((path) => (
+                                    <BreadcrumbList key={path.path}>
+                                        <BreadcrumbItem>
+                                            <BreadcrumbLink asChild>
+                                                <Link href={path.url} className="text-white animated-underline hover:text-white">
+                                                    {path.path}
+                                                </Link>
+                                            </BreadcrumbLink>
+                                        </BreadcrumbItem>
+                                        <BreadcrumbItem>
+                                            <BreadcrumbSeparator>
+                                                <Slash className="text-white" />
+                                            </BreadcrumbSeparator>
+                                        </BreadcrumbItem>
+                                    </BreadcrumbList>
+                                ))}
                             </BreadcrumbList>
                         </Breadcrumb>
                     </FadeIn>
                     <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
-                        <FadeIn>Projects & Datasets</FadeIn>
+                        <FadeIn>
+                            Publications
+                        </FadeIn>
                     </h1>
                 </div>
             </div>

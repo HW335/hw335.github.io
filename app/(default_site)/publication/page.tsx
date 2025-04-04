@@ -39,9 +39,6 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 import { publications, publication_categories } from "@/data/publication"
-
-
-
 const paths: { path: string; url: string; }[] = [
     {
         path: "MMLab",
@@ -75,7 +72,7 @@ export default function Home() {
                                     <BreadcrumbList key={path.path}>
                                         <BreadcrumbItem>
                                             <BreadcrumbLink asChild>
-                                                <Link href="path.url" className="text-white animated-underline hover:text-white">
+                                                <Link href={path.url} className="text-white animated-underline hover:text-white">
                                                     {path.path}
                                                 </Link>
                                             </BreadcrumbLink>
