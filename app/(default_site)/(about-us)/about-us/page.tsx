@@ -82,67 +82,68 @@ export default function Home() {
             </div>
 
 
-            <div className="w-full pl-6 pr-6 mt-20 flex flex-row justify-between gap-10">
-                <div className="flex-1 flex ">
-                    <a className="w-full relative rounded-xl shadow-sm overflow-hidden group" href="#">
-                        <div>
-                            <Image
-                                src="/background/mmlab@hku.jpg"
-                                alt="mmlab@hku"
-                                fill
-                                className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                            />
-                        </div>
-                        <div className="w-full h-full absolute flex flex-col justify-between p-6">
-                            <span className="text-white font-bold">
-                                Mar. 27, 2025
-                            </span>
-                            <h3 className="text-white font-bold text-3xl">
-                                klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
-                            </h3>
-                        </div>
-                    </a>
+            <FadeIn>
+                <div className="w-full pl-6 pr-6 mt-20 flex flex-col xl:flex-row justify-between gap-10">
+                    <div className="flex-1 flex ">
+                        <a className="w-full h-80 xl:h-full relative rounded-xl shadow-sm overflow-hidden group" href="#">
+                            <div>
+                                <Image
+                                    src="/background/mmlab@hku.jpg"
+                                    alt="mmlab@hku"
+                                    fill
+                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                />
+                            </div>
+                            <div className="w-full h-full absolute flex flex-col justify-between p-6">
+                                <span className="text-white font-bold">
+                                    Mar. 27, 2025
+                                </span>
+                                <h3 className="text-white font-bold text-3xl">
+                                    klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="flex-1 flex flex-col justify-between gap-10">
+                        <a className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href="#">
+                            <div>
+                                <Image
+                                    src="/background/mmlab@hku.jpg"
+                                    alt="mmlab@hku"
+                                    fill
+                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                />
+                            </div>
+                            <div className="w-full h-full absolute flex flex-col justify-between p-6">
+                                <span className="text-white font-bold">
+                                    Mar. 27, 2025
+                                </span>
+                                <h3 className="text-white font-bold text-3xl">
+                                    klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
+                                </h3>
+                            </div>
+                        </a>
+                        <a className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href="#">
+                            <div>
+                                <Image
+                                    src="/background/mmlab@ku.jpg"
+                                    alt="mmlab@hku"
+                                    fill
+                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                />
+                            </div>
+                            <div className="w-full h-full absolute flex flex-col justify-between p-6">
+                                <span className="text-white font-bold">
+                                    Mar. 27, 2025
+                                </span>
+                                <h3 className="text-white font-bold text-3xl">
+                                    klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div className="flex-1 flex flex-col justify-between gap-10">
-                    <a className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href="#">
-                        <div>
-                            <Image
-                                src="/background/mmlab@hku.jpg"
-                                alt="mmlab@hku"
-                                fill
-                                className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                            />
-                        </div>
-                        <div className="w-full h-full absolute flex flex-col justify-between p-6">
-                            <span className="text-white font-bold">
-                                Mar. 27, 2025
-                            </span>
-                            <h3 className="text-white font-bold text-3xl">
-                                klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
-                            </h3>
-                        </div>
-                    </a>
-                    <a className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href="#">
-                        <div>
-                            <Image
-                                src="/background/mmlab@ku.jpg"
-                                alt="mmlab@hku"
-                                fill
-                                className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                            />
-                        </div>
-                        <div className="w-full h-full absolute flex flex-col justify-between p-6">
-                            <span className="text-white font-bold">
-                                Mar. 27, 2025
-                            </span>
-                            <h3 className="text-white font-bold text-3xl">
-                                klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
-                            </h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
+            </FadeIn>
 
 
 
