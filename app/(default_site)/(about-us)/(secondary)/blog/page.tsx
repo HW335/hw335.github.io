@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 
 
 import Link from "next/link"
+import Image from 'next/image'
 import { Slash } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 import {
@@ -17,14 +18,7 @@ import {
     BreadcrumbList,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
+
 
 
 import { FadeIn } from "@/components/animation/fade-in"
@@ -137,25 +131,26 @@ export default function Home() {
                                         </Link>
                                     </h2>
 
-                                    <div className="w-full flex flex-col gap-6">
+                                    <div className="w-full max-w-7xl grid gap-10 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
                                         {[...news.values()].filter(n => n.keys.includes(category.category)).map((item) => (
-                                            <FadeIn key={item.title}>
+                                            <a className="w-full h-96 relative rounded-xl shadow-sm overflow-hidden group" href="#">
                                                 <div>
-                                                    <Card className="border-0 bg-black/30" key={item.title}>
-                                                        <CardHeader>
-                                                            <CardTitle className="text-xl text-white">{item.title}</CardTitle>
-                                                            <CardDescription className="text-white">{item.date}</CardDescription>
-                                                        </CardHeader>
-                                                        <CardContent>
-                                                            <p className="text-white">{item.detail}</p>
-                                                        </CardContent>
-                                                        <CardFooter className="text-white flex justify-end">
-                                                            <Link href={item.link} target="_blank" className="animated-underline">More</Link>
-                                                            <span>&nbsp;{'>'}</span>
-                                                        </CardFooter>
-                                                    </Card>
+                                                    <Image
+                                                        src="/background/mmlab@hku.jpg"
+                                                        alt="mmlab@hku"
+                                                        fill
+                                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                                    />
                                                 </div>
-                                            </FadeIn>
+                                                <div className="w-full h-full absolute flex flex-col justify-between p-6">
+                                                    <span className="text-white font-bold">
+                                                        Mar. 27, 2025
+                                                    </span>
+                                                    <h3 className="text-white font-bold text-3xl">
+                                                        klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
+                                                    </h3>
+                                                </div>
+                                            </a>
                                         ))}   
                                     </div>
 
