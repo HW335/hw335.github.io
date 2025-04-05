@@ -82,8 +82,71 @@ export default function Home() {
             </div>
 
 
+            <div className="w-full pl-6 pr-6 mt-20 flex flex-row justify-between gap-10">
+                <div className="h-full flex-1 flex">
+                    <div className="w-full h-full relative rounded-xl shadow-sm overflow-hidden">
+                        <div className="h-full">
+                            <Image
+                                src="/background/mmlab@hku.jpg"
+                                alt="mmlab@hku"
+                                fill
+                                className="object-cover object-center loading select-none"
+                            />
+                        </div>
+                        <div className="w-full h-full absolute flex flex-col justify-evenly p-6">
+                            <h3 className="text-white font-bold text-3xl">
+                                caknccee
+                            </h3>
+                            <p className="text-white">
+                                klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon avisan coancona cwae iebic asc sanci ancen cinsaic scsa ncsancsnafj bvdac snacv cnsach cesabcdsabcjs jbe ds
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="h-fit flex-1 flex flex-col justify-between gap-10">
+                    <div className="w-full h-96 relative rounded-xl shadow-sm overflow-hidden">
+                        <div>
+                            <Image
+                                src="/background/mmlab@hku.jpg"
+                                alt="mmlab@hku"
+                                fill
+                                className="object-cover object-center loading select-none"
+                            />
+                        </div>
+                        <div className="w-full h-full absolute flex flex-col justify-evenly p-6">
+                            <h3 className="text-white font-bold text-3xl">
+                                caknccee
+                            </h3>
+                            <p className="text-white">
+                                klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon avisan coancona cwae iebic asc sanci ancen cinsaic scsa ncsancsnafj bvdac snacv cnsach cesabcdsabcjs jbe ds
+                            </p>
+                        </div>
+                    </div>
+                    <div className="w-full h-96 relative rounded-xl shadow-sm overflow-hidden">
+                        <div>
+                            <Image
+                                src="/background/mmlab@hku.jpg"
+                                alt="mmlab@hku"
+                                fill
+                                className="object-cover object-center loading select-none"
+                            />
+                        </div>
+                        <div className="w-full h-full absolute flex flex-col justify-evenly p-6">
+                            <h3 className="text-white font-bold text-3xl">
+                                caknccee
+                            </h3>
+                            <p className="text-white">
+                                klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon avisan coancona cwae iebic asc sanci ancen cinsaic scsa ncsancsnafj bvdac snacv cnsach cesabcdsabcjs jbe ds
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div className="w-full pl-6 pr-6 flex flex-col items-center">
+
+
+
+            {/* <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <div className="w-full max-w-7xl mt-10 flex flex-col lg:flex-row justify-between gap-6">
                     <div className="w-full flex flex-col gap-6">
                         {selected_news.slice(0,selected_news.length/2).map((item) => (
@@ -128,7 +191,7 @@ export default function Home() {
                         ))}   
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
 
