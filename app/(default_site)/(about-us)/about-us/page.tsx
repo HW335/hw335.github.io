@@ -83,7 +83,7 @@ export default function Home() {
 
 
             <div className="w-full pl-6 pr-6 mt-20 flex flex-row justify-between gap-10">
-                <div className="h-full flex-1 flex">
+                <div className="flex-1">
                     <div className="w-full h-full relative rounded-xl shadow-sm overflow-hidden">
                         <div className="h-full">
                             <Image
@@ -103,43 +103,43 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="h-fit flex-1 flex flex-col justify-between gap-10">
-                    <div className="w-full h-96 relative rounded-xl shadow-sm overflow-hidden">
+                <div className="flex-1 flex flex-col justify-between gap-10">
+                    <a className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href="#">
                         <div>
                             <Image
                                 src="/background/mmlab@hku.jpg"
                                 alt="mmlab@hku"
                                 fill
-                                className="object-cover object-center loading select-none"
+                                className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
                             />
                         </div>
-                        <div className="w-full h-full absolute flex flex-col justify-evenly p-6">
+                        <div className="w-full h-full absolute flex flex-col justify-between p-6">
+                            <span className="text-white font-bold">
+                                Mar. 27, 2025
+                            </span>
                             <h3 className="text-white font-bold text-3xl">
-                                caknccee
+                                klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
                             </h3>
-                            <p className="text-white">
-                                klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon avisan coancona cwae iebic asc sanci ancen cinsaic scsa ncsancsnafj bvdac snacv cnsach cesabcdsabcjs jbe ds
-                            </p>
                         </div>
-                    </div>
-                    <div className="w-full h-96 relative rounded-xl shadow-sm overflow-hidden">
+                    </a>
+                    <a className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href="#">
                         <div>
                             <Image
-                                src="/background/mmlab@hku.jpg"
+                                src="/background/mmlab@ku.jpg"
                                 alt="mmlab@hku"
                                 fill
-                                className="object-cover object-center loading select-none"
+                                className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
                             />
                         </div>
-                        <div className="w-full h-full absolute flex flex-col justify-evenly p-6">
+                        <div className="w-full h-full absolute flex flex-col justify-between p-6">
+                            <span className="text-white font-bold">
+                                Mar. 27, 2025
+                            </span>
                             <h3 className="text-white font-bold text-3xl">
-                                caknccee
+                                klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
                             </h3>
-                            <p className="text-white">
-                                klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon avisan coancona cwae iebic asc sanci ancen cinsaic scsa ncsancsnafj bvdac snacv cnsach cesabcdsabcjs jbe ds
-                            </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
