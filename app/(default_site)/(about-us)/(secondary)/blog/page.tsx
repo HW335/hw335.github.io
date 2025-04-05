@@ -76,7 +76,7 @@ export default function Home() {
                     </FadeIn>
                     <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
                         <FadeIn>
-                            All Blogs
+                            All Articles
                         </FadeIn>
                     </h1>
                 </div>
