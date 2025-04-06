@@ -25,6 +25,8 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+
 
 
 import { FadeIn } from "@/components/animation/fade-in"
@@ -140,20 +142,12 @@ export default function Home() {
                                     <div className="w-full flex flex-col gap-6">
                                         {[...news.values()].filter(n => n.keys.includes(category.category)).map((item) => (
                                             <FadeIn key={item.title}>
-                                                <div>
-                                                    <Card className="border-0 bg-black/30" key={item.title}>
-                                                        <CardHeader>
-                                                            <CardTitle className="text-xl text-white">{item.title}</CardTitle>
-                                                            <CardDescription className="text-white">{item.date}</CardDescription>
-                                                        </CardHeader>
-                                                        <CardContent>
-                                                            <p className="text-white">{item.detail}</p>
-                                                        </CardContent>
-                                                        <CardFooter className="text-white flex justify-end">
-                                                            <Link href={item.link} target="_blank" className="animated-underline">More</Link>
-                                                            <span>&nbsp;{'>'}</span>
-                                                        </CardFooter>
-                                                    </Card>
+                                                <div className="flex flex-col gap-3">
+                                                    <div className="flex flex-row gap-3">
+                                                        <Badge variant="outline">{item.date}</Badge>
+                                                        <span>{item.title}</span>
+                                                    </div>
+                                                    <p>{item.detail}</p>
                                                 </div>
                                             </FadeIn>
                                         ))}   
