@@ -58,18 +58,14 @@ export default function Home() {
                             <BreadcrumbList>
                                 {paths.map((path) => (
                                     <BreadcrumbList key={path.path}>
-                                        <BreadcrumbItem>
-                                            <BreadcrumbLink asChild>
-                                                <Link href={path.url} className="text-white animated-underline hover:text-white">
-                                                    {path.path}
-                                                </Link>
-                                            </BreadcrumbLink>
-                                        </BreadcrumbItem>
-                                        <BreadcrumbItem>
-                                            <BreadcrumbSeparator>
-                                                <Slash className="text-white" />
-                                            </BreadcrumbSeparator>
-                                        </BreadcrumbItem>
+                                        <BreadcrumbLink asChild>
+                                            <Link href={path.url} className="text-white animated-underline hover:text-white">
+                                                {path.path}
+                                            </Link>
+                                        </BreadcrumbLink>
+                                        <BreadcrumbSeparator>
+                                            <Slash className="text-white" />
+                                        </BreadcrumbSeparator>
                                     </BreadcrumbList>
                                 ))}
                             </BreadcrumbList>
