@@ -258,7 +258,7 @@ export default function Home() {
 
                 <FadeIn>
                     <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
-                        <div className="flex-1/3 max-w-64">
+                        <div className="flex-1/3 md:max-w-64">
                             <AspectRatio ratio={1/1}>
                                 <Image
                                     src="/person/ping_luo.jpg"
@@ -283,7 +283,7 @@ export default function Home() {
 
                 <FadeIn>
                     <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
-                        <div className="flex-1/3 max-w-64">
+                        <div className="flex-1/3 md:max-w-64">
                             <AspectRatio ratio={1/1}>
                                 <Image
                                     src="/person/hongyang_li.jpg"
