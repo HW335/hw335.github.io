@@ -194,7 +194,7 @@ export default function Home() {
                     </div>
                     <div className="flex-1 flex flex-col justify-between gap-10">
                         {[...blogs.values()].filter(n => n.keys.includes("secondary")).map((item) => (
-                            <Link className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href={item.link}>
+                            <Link className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href={item.link} key={item.title}>
                                 <div>
                                     <Image
                                         src={item.figure}
