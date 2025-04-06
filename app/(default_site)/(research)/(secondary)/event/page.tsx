@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-    title: "News | MMLab",
+    title: "Event | MMLab",
     description: "Multimedia Laboratory",
-    keywords: ["News", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
+    keywords: ["Event", "MMLab", "Multimedia Laboratory", "HKU", "CUHK", "NTU"],
 };
 
 
 
 import Link from "next/link"
+import Image from 'next/image'
 import { Slash } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 import {
@@ -17,7 +18,6 @@ import {
     BreadcrumbList,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
-import { Badge } from "@/components/ui/badge"
 
 
 
@@ -25,19 +25,19 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 
-import { news_categories, news } from "@/data/news"
+import { event_categories, events } from "@/data/event"
 const paths: { path: string; url: string; }[] = [
     {
         path: "MMLab",
         url: "/"
     },
     {
-        path: "About Us",
-        url: "/about-us"
+        path: "Research",
+        url: "/research"
     },
     {
-        path: "News",
-        url: "/about-us#news"
+        path: "Event",
+        url: "/research#event"
     },
 ]
 
@@ -76,7 +76,7 @@ export default function Home() {
                     </FadeIn>
                     <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white">
                         <FadeIn>
-                            All News
+                            All Events
                         </FadeIn>
                     </h1>
                 </div>
@@ -91,8 +91,8 @@ export default function Home() {
                 {/* navigator */}
                 <div className="w-48 hidden 2xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        {news_categories.map((category) => (
-                            <Link className="select-none flex items-center gap-3 group hover:text-amber-400" href={category.category_id}>
+                        {event_categories.map((event) => (
+                            <Link className="select-none flex items-center gap-3 group hover:text-amber-400" href={event.category_id}>
                                 <FadeIn>
                                     <span className="border-l-4 border-l-foreground text-sm">
                                         &nbsp;
@@ -100,7 +100,7 @@ export default function Home() {
                                 </FadeIn>
                                 <FadeIn>
                                     <span className="text-xl font-bold">
-                                        {category.category}
+                                        {event.category}
                                     </span>
                                 </FadeIn>
                             </Link>
@@ -111,7 +111,7 @@ export default function Home() {
 
 
                 <div className="w-full max-w-7xl flex flex-col">
-                    {news_categories.map((category) => (
+                    {event_categories.map((category) => (
                         <div key={category.category}>
 
 
@@ -131,14 +131,25 @@ export default function Home() {
                                         </Link>
                                     </h2>
 
-                                    <div className="w-full flex flex-col gap-10">
-                                        {[...news.values()].filter(n => n.keys.includes(category.category)).map((item) => (
-                                            <div className="flex flex-col gap-3" key={item.title} >
-                                                <div className="flex flex-row gap-3">
-                                                    <Badge variant="outline">{item.date}</Badge>
-                                                    <span>{item.title}</span>
-                                                </div>
-                                                <p>{item.detail}</p>
+                                    <div className="w-full grid gap-20 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
+                                        {[...events.values()].filter(n => n.keys.includes(category.category)).map((item) => (
+                                            <div className="flex flex-col gap-6" key={item.title}>
+                                                <a className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href={item.link}>
+                                                    <div>
+                                                        <Image
+                                                            src={item.figure}
+                                                            alt={item.figure}
+                                                            fill
+                                                            className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                                        />
+                                                    </div>
+                                                </a>
+                                                <h3 className="font-bold text-3xl">
+                                                    {item.title}
+                                                </h3>
+                                                <span className="font-bold">
+                                                    {item.date}
+                                                </span>
                                             </div>
                                         ))}   
                                     </div>
