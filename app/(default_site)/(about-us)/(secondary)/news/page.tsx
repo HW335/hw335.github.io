@@ -92,7 +92,7 @@ export default function Home() {
                 <div className="w-48 hidden 2xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
                         {news_categories.map((category) => (
-                            <Link className="select-none flex items-center gap-3 group hover:text-amber-400" href={category.category_id}>
+                            <Link className="select-none flex items-center gap-3 group hover:text-amber-400" href={category.category_id} key={category.category_id}>
                                 <FadeIn>
                                     <span className="border-l-4 border-l-foreground text-sm">
                                         &nbsp;
