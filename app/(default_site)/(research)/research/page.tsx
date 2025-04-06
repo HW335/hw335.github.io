@@ -32,7 +32,7 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 
-import { news_categories, news } from "@/data/news"
+import { events } from "@/data/event"
 
 
 
@@ -397,12 +397,12 @@ export default function Home() {
 
                 <div className="w-full pl-6 pr-6 flex flex-col items-center mt-20">
                     <div className="w-full max-w-7xl grid gap-20 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
-                        {news.map((item) => (
-                            <div className="flex flex-col gap-3">
+                        {[...events.values()].filter(n => n.keys.includes("selected")).map((item) => (
+                            <div className="flex flex-col gap-6">
                                 <a className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href="#">
                                     <div>
                                         <Image
-                                            src="/background/mmlab@hku.jpg"
+                                            src={item.figure}
                                             alt="mmlab@hku"
                                             fill
                                             className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
