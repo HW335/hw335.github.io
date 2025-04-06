@@ -400,7 +400,7 @@ export default function Home() {
                         {[...events.values()].filter(n => n.keys.includes("selected")).map((item) => (
                             <FadeIn key={item.title}>
                                 <div className="flex flex-col gap-6">
-                                    <a className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href={item.link}>
+                                    <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href={item.link}>
                                         <div>
                                             <Image
                                                 src={item.figure}
@@ -409,7 +409,7 @@ export default function Home() {
                                                 className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                             />
                                         </div>
-                                    </a>
+                                    </Link>
                                     <h3 className="font-bold text-3xl">
                                         {item.title}
                                     </h3>

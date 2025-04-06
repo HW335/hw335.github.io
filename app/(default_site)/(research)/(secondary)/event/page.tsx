@@ -134,7 +134,7 @@ export default function Home() {
                                     <div className="w-full grid gap-20 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
                                         {[...events.values()].filter(n => n.keys.includes(category.category)).map((item) => (
                                             <div className="flex flex-col gap-6" key={item.title}>
-                                                <a className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href={item.link}>
+                                                <Link className="w-full h-64 relative rounded-xl shadow-sm overflow-hidden group" href={item.link}>
                                                     <div>
                                                         <Image
                                                             src={item.figure}
@@ -143,7 +143,7 @@ export default function Home() {
                                                             className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                                         />
                                                     </div>
-                                                </a>
+                                                </Link>
                                                 <h3 className="font-bold text-3xl">
                                                     {item.title}
                                                 </h3>
