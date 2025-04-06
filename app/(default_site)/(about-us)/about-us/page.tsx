@@ -268,6 +268,60 @@ export default function Home() {
 
 
             <div className="w-full pl-6 pr-6 flex flex-col items-center">
+
+                <FadeIn>
+                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
+                        <div className="flex-1/3">
+                            <AspectRatio ratio={1/1}>
+                                <Image
+                                    src="/person/ping_luo.jpg"
+                                    alt="img"
+                                    fill
+                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"
+                                />
+                            </AspectRatio>
+                        </div>
+                        <div className="flex-2/3 flex flex-col gap-6">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+                                Ping Luo
+                            </h1>
+                            <p>
+                                Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios. 
+                            </p>
+                        </div>
+                    </div>
+                </FadeIn>
+
+
+
+                <FadeIn>
+                    <div className="w-full max-w-7xl mt-20 flex flex-col gap-10 md:flex-row md:gap-20 justify-between">
+                        <div className="flex-1/3">
+                            <AspectRatio ratio={1/1}>
+                                <Image
+                                    src="/person/hongyang_li.jpg"
+                                    alt="img"
+                                    fill
+                                    className="h-full w-full rounded-md object-cover bg-gradient-to-br from-[#b5a774] via-[#e59c2e] to-[#D71440]"
+                                />
+                            </AspectRatio>
+                        </div>
+                        <div className="flex-2/3 flex flex-col gap-6">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+                                Hongyang Li
+                            </h1>
+                            <p>
+                                Accelerated by a standardized collection pipeline with human-in-the-loop verification, AgiBot World guarantees high-quality and diverse data distribution. It is extensible from grippers to dexterous hands and visuo-tactile sensors for fine-grained skill acquisition. Building on top of data, we introduce Genie Operator-1 (GO-1), a novel generalist policy that leverages latent action representations to maximize data utilization, demonstrating predictable performance scaling with increased data volume. Policies pre-trained on our dataset achieve an average performance improvement of 30% over those trained on Open X-Embodiment, both in in-domain and out-of-distribution scenarios. 
+                            </p>
+                        </div>
+                    </div>
+                </FadeIn>
+
+            </div>
+
+
+
+            <div className="w-full pl-6 pr-6 flex flex-col items-center">
                 <Separator className="max-w-7xl mt-20"/>
             </div>
 
