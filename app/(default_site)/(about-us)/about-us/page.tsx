@@ -26,9 +26,9 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 
-import { blogs } from "@/data/blog"
 import { news } from "@/data/news"
 const selected_news = [...news.values()].filter(n => n.keys.includes("selected"))
+import { blogs } from "@/data/blog"
 
 
 
