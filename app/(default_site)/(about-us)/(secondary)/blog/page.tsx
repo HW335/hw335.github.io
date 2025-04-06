@@ -25,7 +25,7 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 
-import { news_categories, news } from "@/data/news"
+import { blog_categories, blogs } from "@/data/blog"
 const paths: { path: string; url: string; }[] = [
     {
         path: "MMLab",
@@ -91,7 +91,7 @@ export default function Home() {
                 {/* navigator */}
                 <div className="w-48 hidden 2xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
-                        {news_categories.map((category) => (
+                        {blog_categories.map((category) => (
                             <Link className="select-none flex items-center gap-3 group hover:text-amber-400" href={category.category_id}>
                                 <FadeIn>
                                     <span className="border-l-4 border-l-foreground text-sm">
@@ -111,7 +111,7 @@ export default function Home() {
 
 
                 <div className="w-full max-w-7xl flex flex-col">
-                    {news_categories.map((category) => (
+                    {blog_categories.map((category) => (
                         <div key={category.category}>
 
 
@@ -132,25 +132,25 @@ export default function Home() {
                                     </h2>
 
                                     <div className="w-full max-w-7xl grid gap-10 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
-                                        {[...news.values()].filter(n => n.keys.includes(category.category)).map((item) => (
-                                            <a className="w-full h-96 relative rounded-xl shadow-sm overflow-hidden group" href="#">
+                                        {[...blogs.values()].filter(n => n.keys.includes(category.category)).map((item) => (
+                                            <Link className="w-full h-96 relative rounded-xl shadow-sm overflow-hidden group" href={item.link}>
                                                 <div>
                                                     <Image
-                                                        src="/background/mmlab@hku.jpg"
-                                                        alt="mmlab@hku"
+                                                        src={item.figure}
+                                                        alt={item.figure}
                                                         fill
                                                         className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
                                                     />
                                                 </div>
                                                 <div className="w-full h-full absolute flex flex-col justify-between p-6">
                                                     <span className="text-white font-bold">
-                                                        Mar. 27, 2025
+                                                        {item.date}
                                                     </span>
                                                     <h3 className="text-white font-bold text-3xl">
-                                                        klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
+                                                        {item.title}
                                                     </h3>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         ))}   
                                     </div>
 

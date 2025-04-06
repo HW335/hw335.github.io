@@ -26,6 +26,7 @@ import { FadeIn } from "@/components/animation/fade-in"
 
 
 
+import { blogs } from "@/data/blog"
 import { news } from "@/data/news"
 const selected_news = [...news.values()].filter(n => n.keys.includes("selected"))
 
@@ -169,63 +170,49 @@ export default function Home() {
 
             <FadeIn>
                 <div className="w-full pl-6 pr-6 mt-20 flex flex-col xl:flex-row justify-between gap-10">
-                    <div className="flex-1 flex ">
-                        <a className="w-full h-80 xl:h-full relative rounded-xl shadow-sm overflow-hidden group" href="#">
-                            <div>
-                                <Image
-                                    src="/background/mmlab@hku.jpg"
-                                    alt="mmlab@hku"
-                                    fill
-                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                />
-                            </div>
-                            <div className="w-full h-full absolute flex flex-col justify-between p-6">
-                                <span className="text-white font-bold">
-                                    Mar. 27, 2025
-                                </span>
-                                <h3 className="text-white font-bold text-3xl">
-                                    klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
-                                </h3>
-                            </div>
-                        </a>
+                    <div className="flex-1 flex">
+                        {[...blogs.values()].filter(n => n.keys.includes("heading")).map((item) => (
+                            <Link className="w-full h-80 xl:h-full relative rounded-xl shadow-sm overflow-hidden group" href={item.link} key={item.title}>
+                                <div>
+                                    <Image
+                                        src={item.figure}
+                                        alt={item.figure}
+                                        fill
+                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-between p-6">
+                                    <span className="text-white font-bold">
+                                        {item.date}
+                                    </span>
+                                    <h3 className="text-white font-bold text-3xl">
+                                        {item.title}
+                                    </h3>
+                                </div>
+                            </Link>
+                        ))}   
                     </div>
                     <div className="flex-1 flex flex-col justify-between gap-10">
-                        <a className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href="#">
-                            <div>
-                                <Image
-                                    src="/background/mmlab@hku.jpg"
-                                    alt="mmlab@hku"
-                                    fill
-                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                />
-                            </div>
-                            <div className="w-full h-full absolute flex flex-col justify-between p-6">
-                                <span className="text-white font-bold">
-                                    Mar. 27, 2025
-                                </span>
-                                <h3 className="text-white font-bold text-3xl">
-                                    klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
-                                </h3>
-                            </div>
-                        </a>
-                        <a className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href="#">
-                            <div>
-                                <Image
-                                    src="/background/mmlab@ku.jpg"
-                                    alt="mmlab@hku"
-                                    fill
-                                    className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
-                                />
-                            </div>
-                            <div className="w-full h-full absolute flex flex-col justify-between p-6">
-                                <span className="text-white font-bold">
-                                    Mar. 27, 2025
-                                </span>
-                                <h3 className="text-white font-bold text-3xl">
-                                    klsanco ncoacon ocosa cojaiocnsan coisa nwanciewn cnasnci ewnck novnwefb na oacnoancon
-                                </h3>
-                            </div>
-                        </a>
+                        {[...blogs.values()].filter(n => n.keys.includes("secondary")).map((item) => (
+                            <Link className="w-full h-80 relative rounded-xl shadow-sm overflow-hidden group" href={item.link}>
+                                <div>
+                                    <Image
+                                        src={item.figure}
+                                        alt={item.figure}
+                                        fill
+                                        className="object-cover object-center loading select-none group-hover:scale-105 transition delay-100 duration-200"
+                                    />
+                                </div>
+                                <div className="w-full h-full absolute flex flex-col justify-between p-6">
+                                    <span className="text-white font-bold">
+                                        {item.date}
+                                    </span>
+                                    <h3 className="text-white font-bold text-3xl">
+                                        {item.title}
+                                    </h3>
+                                </div>
+                            </Link>
+                        ))}   
                     </div>
                 </div>
             </FadeIn>
