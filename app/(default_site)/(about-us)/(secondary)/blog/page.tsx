@@ -88,7 +88,7 @@ export default function Home() {
                 <div className="w-48 hidden 2xl:block">
                     <div className="w-full h-fit mt-20 flex flex-col gap-3 sticky top-64">
                         {blog_categories.map((category) => (
-                            <Link className="select-none flex items-center gap-3 group hover:text-amber-400" href={category.category_id}>
+                            <Link className="select-none flex items-center gap-3 group hover:text-amber-400" href={category.category_id} key={category.category}>
                                 <FadeIn>
                                     <span className="border-l-4 border-l-foreground text-sm">
                                         &nbsp;
@@ -129,7 +129,7 @@ export default function Home() {
 
                                     <div className="w-full max-w-7xl grid gap-10 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3">
                                         {[...blogs.values()].filter(n => n.keys.includes(category.category)).map((item) => (
-                                            <Link className="w-full h-96 relative rounded-xl shadow-sm overflow-hidden group" href={item.link}>
+                                            <Link className="w-full h-96 relative rounded-xl shadow-sm overflow-hidden group" href={item.link} key={item.title}>
                                                 <div>
                                                     <Image
                                                         src={item.figure}
